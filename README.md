@@ -1,5 +1,6 @@
 # Asynchronous-FIFO
 -> Designed a Robust 64*8 Dual Clock Asynchronous FIFO with two clock domains: one for read and one for write.
+
 -> Two flop synchronizer for tackling metastability due to CDC. Gray code pointers were used handling the problem as binary pointer addresses may cause the address value to change after the system comes out to a stable state from metastable state.
 
 # Architecture
