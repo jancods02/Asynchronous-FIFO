@@ -1,0 +1,86 @@
+Starting Command: report_fault_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_fault_statistics_031626174114-463933000 [end TDA_015]
+
+Logic Model(GM)   03/15/26
+                  17:51:50
+File Id     faultModel        faultStatus
+Created (GM)  03/15/26           03/15/26
+              17:52:03           17:52:03
+Modified(GM)  03/15/26           03/15/26
+              17:52:03           17:52:15
+Code Level        2020.2             2020.2            
+Max Fault Id          1388
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-701):  Fault Statistics for Global   : 
+
+
+                    ATCov  ----------------------- Global Faults --------------------------
+                   Global        Total       Tested     Possibly    Redundant     Untested
+
+Total Static        90.06         1388         1250            0            0          138
+Collapsed Static    87.92          985          866            0            0          119
+PI Static           50.00           32           16            0            0           16
+PO Static           33.33           24            8            0            0           16
+
+Total Dynamic                        0
+
+Parametric        
+
+IDDq                 0.00         1388            0                                   1388
+
+
+
+
+[end TFM_701]
+
+
+INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+
+                  %Active      #Faults      #Active    #Inactive
+Total Static        94.81         1388         1316           72
+Collapsed Static    92.69          985          913           72
+PI Static           50.00           32           16           16
+PO Static          100.00           24           24            0
+
+Total Dynamic                        0
+
+Parametric        
+
+There are 1 test mode(s) defined:
+      FULLSCAN
+
+[end TFM_704]
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,286,256  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:41:16 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-701):  Fault Statistics for Global   : 
+      1 INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

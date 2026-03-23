@@ -1,0 +1,1 @@
+ERROR (TFW-917): The directory specified by 'WORKDIR/ENTITY' set to './tbdata/' does not exist.  [end TFW_917] 

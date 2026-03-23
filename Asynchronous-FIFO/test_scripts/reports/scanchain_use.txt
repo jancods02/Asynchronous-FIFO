@@ -1,0 +1,34 @@
+Starting Command: report_scanchains 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_scanchains_FULLSCAN_031826134244-226014000 [end TDA_015]
+
+ERROR (TDA-011): Failed to obtain a license to run Modus report_scanchains.  Attempted to check out the following licenses/quantities (in the order shown):
+                 Modus_Diagnostics (1), Virtuoso_digital_test (1). 
+                 The following license server(s) were in effect:
+                 CDS_LIC_FILE=5280@14.139.1.126, LM_LICENSE_FILE=1717@14.139.1.126 
+                 Check license server information to determine what you need to do to obtain a required license and rerun.  [end TDA_011] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =              740,576  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:04.60                    [end TDA_001]
+
+     Date Ended:  Wednesday Mar 18 13:42:48 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TDA-011): Failed to obtain a license to run Modus report_scanchains.  Attempted to check out the following licenses/quantities (in the order shown):
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

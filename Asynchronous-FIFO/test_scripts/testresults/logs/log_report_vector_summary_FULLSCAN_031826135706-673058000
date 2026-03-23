@@ -1,0 +1,32 @@
+Starting Command: report_vector_summary 
+
+INFO (TDA-005): Command Line Invocation: 
+            report_vector_summary -testmode FULLSCAN -summary yes -workdir /projects/2025H1230098P/cadence/FIFO/test_scripts  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_vector_summary_FULLSCAN_031826135706-673058000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Wednesday Mar 18 13:57:06 2026  IST
+            Host machine is lenovo-56.pilani.bits-pilani.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 984528.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /projects/2025H1230098P/cadence/FIFO/test_scripts
+            -TESTMODE FULLSCAN
+
+            -LOGFILE /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_vector_summary_FULLSCAN_031826135706-673058000
+          + -summary yes
+[end TDA_009]
+      #Sequences  %Det     #Static   #Dynamic  1st Seq Template
+      ----------  ----     -------   --------  ------- --------
+#1           151  99.8        9375          0        3 sSP(rclk)P(wclk)Mm
+#2             1   0.2          15          0        2 sSP(rst)m
+#3             2   0.0           0          0        0 init
+#4             1   0.0           0          0        1 scan
+

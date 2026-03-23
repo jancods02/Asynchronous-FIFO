@@ -1,0 +1,28 @@
+Enabling path groups and categories...
+Enabling path groups and categories done.
+Creating worst chain report...
+Creating worst chain report done.
+
+  x w_en
+  |   slack 5.552ns .../w_en -> .../D (distance: 191.905um)
+  |                 delays=(launch: 2.000ns, datapath: 2.725ns, capture: 0.477ns, adjust: 9.800ns)
+  |                 launch no clock
+  |                 capture clock wclk in analysis view worst
+  |                 path group default
+  o wptr_h_full_reg
+  |     .../CK @(unknown) constraint=(unknown) chosen=(unknown)
+  |            location=(99.905,132.385) slew=(launch: 0.237ns, capture: 0.224ns)
+  |   *WNS* 6.595ns .../Q -> .../D (distance: 159.860um)
+  |                 delays=(launch: 0.494ns, datapath: 3.196ns, capture: 0.477ns, adjust: 9.808ns)
+  |                 launch/capture clock wclk in analysis view worst
+  |                 path group reg2reg
+,-o wptr_h_full_reg
+| |     .../CK @(unknown) constraint=(unknown) chosen=(unknown)
+| |            location=(99.905,132.385) slew=(launch: 0.237ns, capture: 0.224ns)
+| |   slack 6.595ns .../Q -> .../D (distance: 159.860um)
+| |                 delays=(launch: 0.494ns, datapath: 3.196ns, capture: 0.477ns, adjust: 9.808ns)
+| |                 launch/capture clock wclk in analysis view worst
+| |                 path group reg2reg
+`-o wptr_h_full_reg
+
+

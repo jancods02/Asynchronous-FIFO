@@ -1,0 +1,35 @@
+# Cadence Modus
+#   Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64)
+#   Date: Monday, March 16, 2026
+set_db workdir /projects/2025H1230098P/cadence/FIFO/test_scripts
+report_summary > reports/atpg_summary.txt
+build_fault_statistics
+help *statistics*
+help *summary*
+report_fault_statistics > reports/atpg_statistics.txt
+report_domain_fault_statistics > reports/coverage
+report_fault_statistics -testmode MAP1
+get_testmodes
+help *testmodes*
+report_fault_statistics -testmode MAP1
+build_fault_list -testmode MAP1
+help *build_fault_list*
+# Step 1: Generate the faults for the mode
+create_faults -testmode MAP1
+# Step 2: Calculate the coverage (this fills the internal table)
+update_fault_statistics -testmode MAP1
+# Step 3: Print the result
+help *faults*
+report_vector_summary -testmode MAP1
+report_domain_fault_statistics
+verify_test_structures -testmode MAP1
+verify_test_structures -testmode FULLSCAN
+create_logic_tests -testmode FULLSCAN -effort high
+create_logic_tests -testmode FULLSCAN -experiment run1 -effort high
+update_fault_statistics -testmode FULLSCAN
+help *update_fault_statistics*
+report_fault_statistics -testmode FULLSCAN
+report_fault_statistics -testmode FULLSCAN > reports/stats.txt
+report_faults -testmode FULLSCAN -experiment run1 -type untested > reports/untested_run1.txt
+report_faults -testmode FULLSCAN -experiment run1 -type all > reports/untested_run1.txt
+write_vectors -testmode FULLSCAN -experiment run1 -format verilog tbdata/patterns.v

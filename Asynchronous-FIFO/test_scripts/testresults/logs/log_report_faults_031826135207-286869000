@@ -1,0 +1,43 @@
+Starting Command: report_faults 
+
+INFO (TDA-005): Command Line Invocation: 
+            report_faults -status Untestable -test_mode FULLSCAN -faultstatus untestable -workdir /projects/2025H1230098P/cadence/FIFO/test_scripts  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031826135207-286869000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Wednesday Mar 18 13:52:07 2026  IST
+            Host machine is lenovo-56.pilani.bits-pilani.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 982045.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /projects/2025H1230098P/cadence/FIFO/test_scripts
+
+            -LOGFILE /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031826135207-286869000
+            -faultstatus untestable
+[end TDA_009]
+ERROR (TFW-021): The option -test_mode is not valid for the report_faults command line.  [end TFW_021] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-021): The option -test_mode is not valid for the report_faults command line.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

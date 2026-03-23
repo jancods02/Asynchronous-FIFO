@@ -1,0 +1,124 @@
+Starting Command: report_faults 
+
+INFO (TDA-005): Command Line Invocation: 
+            report_faults -testmode FULLSCAN -statussummary yes -workdir /projects/2025H1230098P/cadence/FIFO/test_scripts  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_FULLSCAN_031826135451-847314000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Wednesday Mar 18 13:54:51 2026  IST
+            Host machine is lenovo-56.pilani.bits-pilani.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 984469.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /projects/2025H1230098P/cadence/FIFO/test_scripts
+            -TESTMODE FULLSCAN
+
+            -LOGFILE /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_FULLSCAN_031826135451-847314000
+          + -statussummary yes
+[end TDA_009]
+
+TFMlist 
+
+Logic Model(GM)   03/18/26
+                  08:16:41
+File Id     faultModel        faultStatus
+Created (GM)  03/18/26           03/18/26
+              08:16:55           08:16:55
+Modified(GM)  03/18/26           03/18/26
+              08:16:55           08:19:05
+Code Level        2020.2             2020.2            
+Max Fault Id         13386
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-705): Testmode: FULLSCAN   Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+      7846 Ud      ISA0           NOR2BXL                 g23407.B   
+      7882 Ud      ISA0           NOR2BXL                 g23402.B   
+      7886 Ud      ISA0           NOR2BXL                 g23401.B   
+      7890 Ud      ISA0           NOR2BXL                 g23400.B   
+      7894 Ud      ISA0           NOR2BXL                 g23399.B   
+      7898 Ud      ISA0           NOR2BXL                 g23398.B   
+      7904 Ud      OSA0           CLKINVX1                g22432.Y   
+     13250 cUd     ISA1           CLKINVX1                g22432.A   
+      7908 Ud      OSA0           CLKINVX1                g22430.Y   
+     13246 cUd     ISA1           CLKINVX1                g22430.A   
+      7989 Ud      OSA0           BUFX2                   drc_buf_sp23393.Y   
+     13176 cUd     ISA0           BUFX2                   drc_buf_sp23393.A   
+      7999 Ud      ISA0           NOR2XL                  g21184__2398.A   
+      8007 Ud      ISA0           NOR2XL                  g21185__5107.B   
+      8167 Ud      ISA1           AND2XL                  g21214__9315.A   
+      8173 Ud      ISA1           AND2XL                  g21217__5115.A   
+      8181 Ud      ISA1           AND2XL                  g21218__1705.B   
+      8187 Ud      ISA0           NOR2XL                  g21219__5122.B   
+      8251 Ud      ISA1           AND2XL                  g21233__8428.A   
+      8259 Ud      ISA0           NOR2XL                  g21234__5477.B   
+      8277 Ud      ISA1           AND2XL                  g21237__2346.B   
+      8323 Ud      ISA0           NOR2XL                  g21251__6161.A   
+      8361 Ud      ISA1           AND2XL                  g21259__2802.A   
+      8369 Ud      ISA1           AND2XL                  g21260__1705.B   
+      8413 Ud      ISA0           NOR2XL                  g21281__2883.B   
+      8489 Ud      ISA0           NOR2XL                  g21295__5477.A   
+      8497 Ud      ISA0           NOR2XL                  g21296__5122.B   
+      8625 Ud      ISA0           NOR2XL                  g21318__3680.A   
+      8724 Ud      ISA0           NOR2XL                  g22292__3680.A   
+      8726 Ud      ISA1           AND2XL                  g22291__1617.B   
+      8747 Ud      ISA0           NOR2XL                  g21608__6161.B   
+      9061 Ud      ISA0           NOR2XL                  g21640__2883.A   
+      9445 Ud      ISA0           NOR2XL                  g21926__9945.B   
+      9475 Ud      ISA0           NOR2XL                  g21932__9945.A   
+
+[end TFM_705]
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :           34
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):            0
+ ATPG Untestable       :           34
+   Ud                  :           34
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,021,824  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Wednesday Mar 18 13:54:54 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Testmode: FULLSCAN   Fault List:   
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

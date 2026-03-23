@@ -1,0 +1,526 @@
+Ignoring AAE DB Resetting ...
+Updating timing graph...
+  
+  Leaving CCOpt scope - BuildTimeGraph...
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: asynchronous_fifo
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2030.52)
+*** Calculating scaling factor for slow libraries using the default operating condition of each library.
+Total number of fetched objects 1316
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=2065.94 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2065.94 CPU=0:00:00.1 REAL=0:00:00.0)
+  Leaving CCOpt scope - BuildTimeGraph done. (took cpu=0:00:00.2 real=0:00:00.2)
+Updating timing graph done.
+Updating latch analysis...
+  Leaving CCOpt scope - Updating latch analysis...
+  Leaving CCOpt scope - Updating latch analysis done. (took cpu=0:00:00.0 real=0:00:00.0)
+Updating latch analysis done.
+Clock tree timing engine global stage delay update for max:setup.early...
+Clock tree timing engine global stage delay update for max:setup.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for max:setup.late...
+Clock tree timing engine global stage delay update for max:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for min:hold.early...
+Clock tree timing engine global stage delay update for min:hold.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for min:hold.late...
+Clock tree timing engine global stage delay update for min:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+-----------------------------------------------------------------------
+Skew Group          Sources    Constrained Sinks    Unconstrained Sinks
+-----------------------------------------------------------------------
+rclk/constraints       1               29                    0
+wclk/constraints       1              533                    0
+-----------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner      Skew Group          ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+max:setup.early    rclk/constraints        -        0.417     0.418     0.417        0.000       ignored                  -         0.001              -
+                   wclk/constraints        -        0.475     0.488     0.483        0.003       ignored                  -         0.013              -
+max:setup.late     rclk/constraints    *0.500       0.426     0.427     0.427        0.000       explicit             0.050         0.001    100% {0.426, 0.427}
+                   wclk/constraints     0.500       0.484     0.498     0.493        0.004       explicit             0.050         0.014    100% {0.484, 0.498}
+min:hold.early     rclk/constraints        -        0.130     0.131     0.130        0.000       ignored                  -         0.001              -
+                   wclk/constraints        -        0.148     0.155     0.152        0.002       ignored                  -         0.007              -
+min:hold.late      rclk/constraints        -        0.134     0.135     0.134        0.000       ignored                  -         0.001              -
+                   wclk/constraints        -        0.151     0.158     0.155        0.002       ignored                  -         0.007              -
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+---------------------------------------------------------------------------
+Timing Corner      Skew Group          Min ID    PathID    Max ID    PathID
+---------------------------------------------------------------------------
+max:setup.early    rclk/constraints    0.417        1      0.418        2
+-    min sync_wptr_dout_reg[6]/CK
+-    max fifom_dout_reg[2]/CK
+                   wclk/constraints    0.475        9      0.488       10
+-    min fifom_fifo_reg[32][4]/CK
+-    max fifom_fifo_reg[47][5]/CK
+max:setup.late     rclk/constraints    0.426        3      0.427        4
+-    min sync_wptr_dout_reg[6]/CK
+-    max fifom_dout_reg[2]/CK
+                   wclk/constraints    0.484       11      0.498       12
+-    min fifom_fifo_reg[54][5]/CK
+-    max fifom_fifo_reg[47][7]/CK
+min:hold.early     rclk/constraints    0.130        5      0.131        6
+-    min sync_wptr_dout_reg[6]/CK
+-    max fifom_dout_reg[2]/CK
+                   wclk/constraints    0.148       13      0.155       14
+-    min fifom_fifo_reg[32][4]/CK
+-    max fifom_fifo_reg[47][5]/CK
+min:hold.late      rclk/constraints    0.134        7      0.135        8
+-    min sync_wptr_dout_reg[6]/CK
+-    max fifom_dout_reg[5]/CK
+                   wclk/constraints    0.151       15      0.158       16
+-    min fifom_fifo_reg[32][4]/CK
+-    max fifom_fifo_reg[47][5]/CK
+---------------------------------------------------------------------------
+
+Timing for timing corner max:setup.early, min clock_path:
+=========================================================
+
+PathID    : 1
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : sync_wptr_dout_reg[6]/CK
+Delay     : 0.417
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+rclk
+-     -          rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2   rise   0.000   0.000   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2   rise   0.154   0.154   0.108  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3   rise   0.000   0.154   0.108  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3   rise   0.261   0.415   0.233  0.084  (45.965,135.285)    1.740     29    
+sync_wptr_dout_reg[6]/CK
+-     SDFFRHQX1  rise   0.001   0.417   0.233  -      (71.195,139.925)   29.870   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.early, max clock_path:
+=========================================================
+
+PathID    : 2
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : fifom_dout_reg[1]/CK
+Delay     : 0.418
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+rclk
+-     -         rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2  rise   0.000   0.000   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2  rise   0.154   0.154   0.108  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3  rise   0.000   0.154   0.108  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3  rise   0.261   0.415   0.233  0.084  (45.965,135.285)    1.740     29    
+fifom_dout_reg[1]/CK
+-     SDFFQX1   rise   0.002   0.418   0.233  -      (75.835,71.775)    93.380   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.late, min clock_path:
+========================================================
+
+PathID    : 3
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : sync_wptr_dout_reg[6]/CK
+Delay     : 0.426
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+rclk
+-     -          rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2   rise   0.001   0.001   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2   rise   0.154   0.154   0.108  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3   rise   0.001   0.155   0.108  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3   rise   0.270   0.425   0.246  0.084  (45.965,135.285)    1.740     29    
+sync_wptr_dout_reg[6]/CK
+-     SDFFRHQX1  rise   0.001   0.426   0.246  -      (71.195,139.925)   29.870   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.late, max clock_path:
+========================================================
+
+PathID    : 4
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : fifom_dout_reg[0]/CK
+Delay     : 0.427
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+rclk
+-     -         rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2  rise   0.001   0.001   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2  rise   0.154   0.154   0.108  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3  rise   0.001   0.155   0.108  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3  rise   0.270   0.425   0.246  0.084  (45.965,135.285)    1.740     29    
+fifom_dout_reg[0]/CK
+-     SDFFQX1   rise   0.002   0.427   0.246  -      (82.505,76.995)    94.830   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.early, min clock_path:
+========================================================
+
+PathID    : 5
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : sync_wptr_dout_reg[6]/CK
+Delay     : 0.130
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+rclk
+-     -          rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2   rise   0.000   0.000   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2   rise   0.047   0.048   0.034  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3   rise   0.000   0.048   0.034  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3   rise   0.081   0.128   0.080  0.087  (45.965,135.285)    1.740     29    
+sync_wptr_dout_reg[6]/CK
+-     SDFFRHQX1  rise   0.001   0.130   0.080  -      (71.195,139.925)   29.870   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.early, max clock_path:
+========================================================
+
+PathID    : 6
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : fifom_dout_reg[1]/CK
+Delay     : 0.131
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+rclk
+-     -         rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2  rise   0.000   0.000   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2  rise   0.047   0.048   0.034  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3  rise   0.000   0.048   0.034  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3  rise   0.081   0.128   0.080  0.087  (45.965,135.285)    1.740     29    
+fifom_dout_reg[1]/CK
+-     SDFFQX1   rise   0.002   0.131   0.080  -      (75.835,71.775)    93.380   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.late, min clock_path:
+=======================================================
+
+PathID    : 7
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : sync_wptr_dout_reg[6]/CK
+Delay     : 0.134
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+rclk
+-     -          rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2   rise   0.001   0.001   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2   rise   0.047   0.048   0.034  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3   rise   0.001   0.048   0.034  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3   rise   0.084   0.132   0.085  0.087  (45.965,135.285)    1.740     29    
+sync_wptr_dout_reg[6]/CK
+-     SDFFRHQX1  rise   0.001   0.134   0.085  -      (71.195,139.925)   29.870   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.late, max clock_path:
+=======================================================
+
+PathID    : 8
+Path type : skew group rclk/constraints (path 1 of 1)
+Start     : rclk
+End       : fifom_dout_reg[3]/CK
+Delay     : 0.135
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+rclk
+-     -         rise   -       0.000   0.003  0.019  (87.435,167.620)  -            1    
+CTS_cdb_buf_00037/A
+-     CLKBUFX2  rise   0.001   0.001   0.003  -      (86.275,32.915)   135.865   -       
+CTS_cdb_buf_00037/Y
+-     CLKBUFX2  rise   0.047   0.048   0.034  0.021  (85.695,32.625)     0.870      1    
+CTS_cdb_buf_00036/A
+-     CLKBUFX3  rise   0.001   0.048   0.034  -      (44.515,134.995)  143.550   -       
+CTS_cdb_buf_00036/Y
+-     CLKBUFX3  rise   0.084   0.132   0.085  0.087  (45.965,135.285)    1.740     29    
+fifom_dout_reg[3]/CK
+-     SDFFQX1   rise   0.002   0.135   0.085  -      (91.495,64.525)   116.290   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.early, min clock_path:
+=========================================================
+
+PathID    : 9
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[32][4]/CK
+Delay     : 0.475
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.190   0.190   0.171  0.056  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00010/A
+-     CLKBUFX8   rise   0.001   0.190   0.171  -      (100.775,82.795)   68.440   -       
+CTS_ccl_a_buf_00010/Y
+-     CLKBUFX8   rise   0.284   0.474   0.224  0.212  (104.255,82.795)    3.480     80    
+fifom_fifo_reg[32][4]/CK
+-     SMDFFHQX1  rise   0.001   0.475   0.224  -      (94.395,85.405)    12.470   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.early, max clock_path:
+=========================================================
+
+PathID    : 10
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[43][5]/CK
+Delay     :  0.488
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.190   0.190   0.171  0.056  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00008/A
+-     CLKBUFX8   rise   0.001   0.190   0.171  -      (86.565,90.045)    89.900   -       
+CTS_ccl_a_buf_00008/Y
+-     CLKBUFX8   rise   0.291   0.481   0.238  0.225  (83.085,90.045)     3.480     91    
+fifom_fifo_reg[43][5]/CK
+-     SMDFFHQX1  rise   0.007   0.488   0.238  -      (9.715,144.855)   128.180   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.late, min clock_path:
+========================================================
+
+PathID    : 11
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[54][5]/CK
+Delay     :  0.484
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.190   0.190   0.171  0.056  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00010/A
+-     CLKBUFX8   rise   0.001   0.191   0.171  -      (100.775,82.795)   68.440   -       
+CTS_ccl_a_buf_00010/Y
+-     CLKBUFX8   rise   0.293   0.483   0.237  0.212  (104.255,82.795)    3.480     80    
+fifom_fifo_reg[54][5]/CK
+-     SMDFFHQX1  rise   0.001   0.484   0.237  -      (95.555,87.435)    13.340   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner max:setup.late, max clock_path:
+========================================================
+
+PathID    : 12
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[43][0]/CK
+Delay     :  0.498
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.190   0.190   0.171  0.056  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00008/A
+-     CLKBUFX8   rise   0.001   0.191   0.171  -      (86.565,90.045)    89.900   -       
+CTS_ccl_a_buf_00008/Y
+-     CLKBUFX8   rise   0.300   0.491   0.253  0.225  (83.085,90.045)     3.480     91    
+fifom_fifo_reg[43][0]/CK
+-     SMDFFHQX1  rise   0.007   0.498   0.253  -      (9.715,137.605)   120.930   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.early, min clock_path:
+========================================================
+
+PathID    : 13
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[32][4]/CK
+Delay     :  0.148
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.062   0.062   0.058  0.058  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00010/A
+-     CLKBUFX8   rise   0.001   0.062   0.058  -      (100.775,82.795)   68.440   -       
+CTS_ccl_a_buf_00010/Y
+-     CLKBUFX8   rise   0.085   0.147   0.077  0.219  (104.255,82.795)    3.480     80    
+fifom_fifo_reg[32][4]/CK
+-     SMDFFHQX1  rise   0.001   0.148   0.077  -      (94.395,85.405)    12.470   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.early, max clock_path:
+========================================================
+
+PathID    : 14
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[43][5]/CK
+Delay     :  0.155
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.062   0.062   0.058  0.058  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00008/A
+-     CLKBUFX8   rise   0.001   0.062   0.058  -      (86.565,90.045)    89.900   -       
+CTS_ccl_a_buf_00008/Y
+-     CLKBUFX8   rise   0.085   0.147   0.083  0.233  (83.085,90.045)     3.480     91    
+fifom_fifo_reg[43][5]/CK
+-     SMDFFHQX1  rise   0.007   0.155   0.083  -      (9.715,144.855)   128.180   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.late, min clock_path:
+=======================================================
+
+PathID    : 15
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[32][4]/CK
+Delay     :  0.151
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.062   0.062   0.058  0.058  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00010/A
+-     CLKBUFX8   rise   0.001   0.062   0.058  -      (100.775,82.795)   68.440   -       
+CTS_ccl_a_buf_00010/Y
+-     CLKBUFX8   rise   0.088   0.150   0.081  0.219  (104.255,82.795)    3.480     80    
+fifom_fifo_reg[32][4]/CK
+-     SMDFFHQX1  rise   0.001   0.151   0.081  -      (94.395,85.405)    12.470   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner min:hold.late, max clock_path:
+=======================================================
+
+PathID    : 16
+Path type : skew group wclk/constraints (path 1 of 1)
+Start     : wclk
+End       : fifom_fifo_reg[43][0]/CK
+Delay     :  0.158
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wclk
+-     -          rise   -       0.000   0.003  0.006  (91.785,0.000)    -            1    
+CTS_cdb_buf_00034/A
+-     CLKBUFX3   rise   0.000   0.000   0.003  -      (100.195,14.935)   23.345   -       
+CTS_cdb_buf_00034/Y
+-     CLKBUFX3   rise   0.062   0.062   0.058  0.058  (101.645,15.225)    1.740      6    
+CTS_ccl_a_buf_00008/A
+-     CLKBUFX8   rise   0.001   0.062   0.058  -      (86.565,90.045)    89.900   -       
+CTS_ccl_a_buf_00008/Y
+-     CLKBUFX8   rise   0.088   0.150   0.088  0.233  (83.085,90.045)     3.480     91    
+fifom_fifo_reg[43][0]/CK
+-     SMDFFHQX1  rise   0.008   0.158   0.088  -      (9.715,137.605)   120.930   -       
+------------------------------------------------------------------------------------------------
+
+

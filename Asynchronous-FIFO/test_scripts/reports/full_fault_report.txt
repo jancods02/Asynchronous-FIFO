@@ -1,0 +1,205 @@
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031626135308-214917000 [end TDA_015]
+
+
+TFMlist 
+
+Logic Model(GM)   03/15/26
+                  17:51:50
+File Id     faultModel        faultStatus
+Created (GM)  03/15/26           03/15/26
+              17:52:03           17:52:03
+Modified(GM)  03/15/26           03/15/26
+              17:52:03           17:52:15
+Code Level        2020.2             2020.2            
+Max Fault Id          1388
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-705): Global    Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+         3 u       OSA0           PI                      data_in[0]   
+         4 u       OSA1           PI                      data_in[0]   
+         5 u       OSA0           PI                      data_in[1]   
+         6 u       OSA1           PI                      data_in[1]   
+         7 u       OSA0           PI                      data_in[2]   
+         8 u       OSA1           PI                      data_in[2]   
+         9 u       OSA0           PI                      data_in[3]   
+        10 u       OSA1           PI                      data_in[3]   
+        11 u       OSA0           PI                      data_in[4]   
+        12 u       OSA1           PI                      data_in[4]   
+        13 u       OSA0           PI                      data_in[5]   
+        14 u       OSA1           PI                      data_in[5]   
+        15 u       OSA0           PI                      data_in[6]   
+        16 u       OSA1           PI                      data_in[6]   
+        17 u       OSA0           PI                      data_in[7]   
+        18 u       OSA1           PI                      data_in[7]   
+        35 u       OSA0           PO                      data_out[0]   
+      1384 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[0]   
+        36 u       OSA1           PO                      data_out[0]   
+      1383 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[0]   
+        37 u       OSA0           PO                      data_out[1]   
+      1382 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[1]   
+        38 u       OSA1           PO                      data_out[1]   
+      1381 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[1]   
+        39 u       OSA0           PO                      data_out[2]   
+      1380 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[2]   
+        40 u       OSA1           PO                      data_out[2]   
+      1379 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[2]   
+        41 u       OSA0           PO                      data_out[3]   
+      1378 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[3]   
+        42 u       OSA1           PO                      data_out[3]   
+      1377 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[3]   
+        43 u       OSA0           PO                      data_out[4]   
+      1376 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[4]   
+        44 u       OSA1           PO                      data_out[4]   
+      1375 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[4]   
+        45 u       OSA0           PO                      data_out[5]   
+      1374 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[5]   
+        46 u       OSA1           PO                      data_out[5]   
+      1373 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[5]   
+        47 u       OSA0           PO                      data_out[6]   
+      1372 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[6]   
+        48 u       OSA1           PO                      data_out[6]   
+      1371 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[6]   
+        49 u       OSA0           PO                      data_out[7]   
+      1370 cu      OSA0           FIFO_Memory_DEPTH64*    fifom.dout[7]   
+        50 u       OSA1           PO                      data_out[7]   
+      1369 cu      OSA1           FIFO_Memory_DEPTH64*    fifom.dout[7]   
+       505 u       OSA0           CLKINVX1                drc_bufs.Y   
+      1388 cu      ISA1           CLKINVX1                drc_bufs.A   
+       509 u       OSA0           CLKINVX1                drc_bufs7938.Y   
+      1386 cu      ISA1           CLKINVX1                drc_bufs7938.A   
+       513 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[0]   
+       514 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[0]   
+       515 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[1]   
+       516 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[1]   
+       517 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[2]   
+       518 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[2]   
+       519 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[3]   
+       520 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[3]   
+       521 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[4]   
+       522 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[4]   
+       523 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[5]   
+       524 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[5]   
+       525 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_rptr[6]   
+       526 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_rptr[6]   
+       527 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[0]   
+       528 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[0]   
+       529 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[1]   
+       530 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[1]   
+       531 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[2]   
+       532 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[2]   
+       533 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[3]   
+       534 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[3]   
+       535 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[4]   
+       536 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[4]   
+       537 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[5]   
+       538 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[5]   
+       539 u       ISA0           FIFO_Memory_DEPTH64*    fifom.b_wptr[6]   
+       540 u       ISA1           FIFO_Memory_DEPTH64*    fifom.b_wptr[6]   
+       541 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[0]   
+       542 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[0]   
+       543 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[1]   
+       544 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[1]   
+       545 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[2]   
+       546 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[2]   
+       547 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[3]   
+       548 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[3]   
+       549 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[4]   
+       550 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[4]   
+       551 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[5]   
+       552 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[5]   
+       553 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[6]   
+       554 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[6]   
+       555 u       ISA0           FIFO_Memory_DEPTH64*    fifom.din[7]   
+       556 u       ISA1           FIFO_Memory_DEPTH64*    fifom.din[7]   
+       557 u       ISA0           FIFO_Memory_DEPTH64*    fifom.empty   
+       558 u       ISA1           FIFO_Memory_DEPTH64*    fifom.empty   
+       559 u       ISA0           FIFO_Memory_DEPTH64*    fifom.full   
+       560 u       ISA1           FIFO_Memory_DEPTH64*    fifom.full   
+       561 u       ISA0           FIFO_Memory_DEPTH64*    fifom.r_en   
+       562 u       ISA1           FIFO_Memory_DEPTH64*    fifom.r_en   
+       563 u       ISA0           FIFO_Memory_DEPTH64*    fifom.rclk   
+       564 u       ISA1           FIFO_Memory_DEPTH64*    fifom.rclk   
+       565 u       ISA0           FIFO_Memory_DEPTH64*    fifom.w_en   
+       566 u       ISA1           FIFO_Memory_DEPTH64*    fifom.w_en   
+       567 u       ISA0           FIFO_Memory_DEPTH64*    fifom.wclk   
+       568 u       ISA1           FIFO_Memory_DEPTH64*    fifom.wclk   
+       587 u       ISA0           NOR2BXL                 g2__2346.B   
+       591 u       OSA0           CLKINVX1                g6618.Y   
+      1365 cu      ISA1           CLKINVX1                g6618.A   
+       597 u       ISA0           NOR2XL                  g7769__2398.B   
+       598 u       ISA0           NOR2BXL                 g7946__6417.B   
+       600 u       ISA0           NOR2BXL                 g7945__7410.B   
+       604 u       ISA0           NOR2BXL                 g7944__1666.B   
+       611 u       ISA0           NOR2XL                  g7772__6260.A   
+       666 u       ISA0           NOR2XL                  g7921__6131.B   
+       686 u       ISA0           NOR2XL                  g7918__5122.A   
+       722 u       ISA0           NOR2XL                  g7911__3680.A   
+       735 u       ISA0           NOR2XL                  g7907__8428.B   
+       765 u       ISA1           AND2XL                  g7798__2883.A   
+       792 u       ISA0           NOR2XL                  g7895__1666.B   
+       796 u       ISA0           NOR2XL                  g7894__2346.A   
+       797 u       ISA1           AND2XL                  g7808__5477.A   
+       803 u       ISA1           AND2XL                  g7809__2398.A   
+       835 u       ISA0           NOR2XL                  g7888__4733.A   
+       869 u       ISA0           NOR2XL                  g7830__1705.A   
+       875 u       ISA1           AND2XL                  g7831__5122.A   
+       883 u       ISA0           NOR2XL                  g7832__8246.B   
+       884 u       ISA0           NOR2XL                  g7878__7098.B   
+       889 u       ISA1           AND2XL                  g7833__7098.B   
+       907 u       ISA0           NOR2XL                  g7838__5115.A   
+       915 u       ISA1           AND2XL                  g7841__7482.B   
+       920 u       ISA0           NOR2XL                  g7868__1617.A   
+       921 u       ISA1           AND2XL                  g7842__4733.B   
+       922 u       ISA0           NOR2XL                  g7867__3680.B   
+       924 u       ISA0           NOR2XL                  g7866__6783.B   
+       969 u       ISA0           NOR2XL                  g7853__7410.B   
+
+[end TFM_705]
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :          138
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):          138
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            9,498,608  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 13:53:09 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Global    Fault List:   
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

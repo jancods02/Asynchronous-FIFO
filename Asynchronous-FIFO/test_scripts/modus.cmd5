@@ -1,0 +1,5 @@
+# Cadence Modus
+#   Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64)
+#   Date: Tuesday, March 17, 2026
+set_db workdir /projects/2025H1230098P/cadence/FIFO/test_scripts
+exit

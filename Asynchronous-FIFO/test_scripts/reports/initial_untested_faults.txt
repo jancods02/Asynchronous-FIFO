@@ -1,0 +1,101 @@
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031826000940-846501000 [end TDA_015]
+
+
+TFMlist 
+
+Logic Model(GM)   03/17/26
+                  18:37:13
+File Id     faultModel        faultStatus
+Created (GM)  03/17/26           03/17/26
+              18:37:28           18:37:28
+Modified(GM)  03/17/26           03/17/26
+              18:37:28           18:37:41
+Code Level        2020.2             2020.2            
+Max Fault Id         13318
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-705): Global    Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+      7822 u       ISA0           NOR2BXL                 g27643.B   
+      7826 u       ISA0           NOR2BXL                 g27642.B   
+      7830 u       ISA0           NOR2BXL                 g27641.B   
+      7834 u       ISA0           NOR2BXL                 g27640.B   
+      7838 u       ISA0           NOR2BXL                 g27639.B   
+      7842 u       ISA0           NOR2BXL                 g27638.B   
+      7892 u       OSA0           CLKINVX1                g26622.Y   
+     13188 cu      ISA1           CLKINVX1                g26622.A   
+      7896 u       OSA0           CLKINVX1                g26621.Y   
+     13184 cu      ISA1           CLKINVX1                g26621.A   
+      7989 u       OSA0           BUFX2                   drc_buf_sp27591.Y   
+     13110 cu      ISA0           BUFX2                   drc_buf_sp27591.A   
+      8017 u       ISA0           NOR2XL                  g25396__2398.B   
+      8031 u       ISA0           NOR2XL                  g25399__5107.A   
+      8271 u       ISA1           AND2XL                  g25444__5526.A   
+      8277 u       ISA1           AND2XL                  g25445__6783.A   
+      8405 u       ISA0           NOR2XL                  g25461__5107.A   
+      8423 u       ISA0           NOR2XL                  g25464__1666.A   
+      8623 u       ISA0           NOR2XL                  g25491__8428.A   
+      8664 u       ISA1           AND2XL                  g26490__6417.A   
+      8809 u       ISA0           NOR2XL                  g25521__2883.B   
+      8815 u       ISA1           AND2XL                  g25522__2346.B   
+      8819 u       ISA0           NOR2XL                  g25523__9945.A   
+      8853 u       ISA0           NOR2XL                  g25529__2398.A   
+      8953 u       ISA0           NOR2XL                  g25542__5526.B   
+      8971 u       ISA0           NOR2XL                  g25545__5107.B   
+      9010 u       ISA0           NOR2XL                  g26435__5477.B   
+      9495 u       ISA0           NOR2XL                  g25819__6417.B   
+      9521 u       ISA0           NOR2XL                  g25996__1881.A   
+      9535 u       ISA0           NOR2XL                  g26002__1666.B   
+      9541 u       ISA0           NOR2XL                  g26003__5526.B   
+      9609 u       ISA0           NOR2XL                  g26090__6131.B   
+     10211 u       ISA0           NOR2XL                  g26201__4319.B   
+     10331 u       ISA0           NOR2XL                  g26215__8428.A   
+
+[end TFM_705]
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :           34
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):           34
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,027,600  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Wednesday Mar 18 00:09:43 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Global    Fault List:   
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

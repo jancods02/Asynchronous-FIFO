@@ -1,0 +1,100 @@
+
+ 
+Copyright (C) 2002-2020 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks and Modus is a trademark 
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Type 'help legal_notices' for third party license notices. 
+Version : 20.12-s002_1, built Feb 26 2021 (linux26_64)
+Options : 
+Date    : Wed, March 18 00:20:19 2026
+Host    : lenovo-56.pilani.bits-pilani.ac.in (x86_64 Linux 4.18.0-425.19.2.el8_7.x86_64) (12*INTEL(R) XEON(R) SILVER 4510 30720KB)
+OS      : Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+INFO (TUI-300): Detected the presence of Modus database in present working directory. The 'workdir' root attribute is set to '/projects/2025H1230098P/cadence/FIFO/test_scripts'. [end TUI_300]
+@modus:root:/ 1> help *report_fault_statistics*
+Commands:
+    report_fault_statistics:
+
+    report_fault_statistics is used to print out the fault coverage 
+    statistics.
+
+
+report_fault_statistics:
+
+ [-H]                                  Help text
+ [-h]                                  Help text
+ [-ALTFAULT <string>]                  Use Alternate Fault Model
+ [-COMET <string>]                     COMET Name(s)
+ [-EXPERIMENT <string>]                Experiment Name
+ [-LOG no|all|summary|nosummary] (all) Customize Data Written to Log
+ [-LOGCOMPRESS yes|no] (no)            Compress the log file
+ [-LOGFILE <outfilename>]              Write to specified log file
+ [-STDOUT no|all|summary|nosummary] (all) Customize Data Written to STDOUT
+ [-TESTMODE <string>]                  Test Mode (Name(s), all, or NONE)
+  -WORKDIR <string>                    Working Directory
+ [-coveragecredit tested|redundant|possibly[,tested|redundant|possibly]...] (redundant) Status of faults to be given credit in the coverage calculation
+ [-effectiveness yes|no] (no)          Test Generation Effectiveness Statistics
+ [-experimentglobal no|yes] (no)       Include experiment status on top of global status
+ [-experimentonly no|yes] (no)         Include uncommitted tests experiment status without test mode status
+ [-help <string>]                      Help Facility
+ [-hierend primitive|techcell|macro|<integer>] (Conditional Default) Limit hierarchical list to this many levels deep
+ [-hiernameform simple|short] (short)  Hierarchical Block Name Form
+ [-hierstart top|techcell|<string><integer>] Report Hierarchical Statistics for Block Name(s)
+ [-messagecount <string>]              Limit Messages for Specified Message Id (e.g., messagecount=XXX-710=3).
+ [-messagecounteach <integer>]         Default Limit for Each Message.
+ [-messagecounteachseverity all|excludeinfo] (all) Level of severity for which messages are to be suppressed as per messagecounteach
+ [-powercomponent <string>]            Type(s) of Low Power Components to Report
+ [-reporttype static|dynamic|parametric|iddq|all[,static|dynamic|parametric|iddq|all]...] (Conditional Default) Type of faults to include in the report
+ [-sorthier yes|no] (no)               Sort Hierarchical Statistics
+ [-verbose no|yes] (no)                Verbose
+
+@modus:root:/ 2> report_faults -testmode FULLSCAN -experiment asynchronous_fifo_atpg -coveragecredit tested > reports/problem_faults.txt
+5
+@modus:root:/ 3> help *report_fauls*
+@modus:root:/ 4> help *report_faults*
+Commands:
+    report_faults:
+
+    report_faults is used to print out a list of faults that meet the specified 
+    criteria. 
+
+
+report_faults:
+
+ [-H]                                  Help text
+ [-h]                                  Help text
+ [-ALTFAULT <string>]                  Alternate Fault Model
+ [-COMET <string>]                     COMET Name(s)
+ [-EXPERIMENT <string>]                Experiment Name
+ [-LOG no|all|summary|nosummary] (all) Customize Data Written to Log
+ [-LOGCOMPRESS yes|no] (no)            Compress the log file
+ [-LOGFILE <outfilename>]              Write to specified log file
+ [-STDOUT no|all|summary|nosummary] (all) Customize Data Written to STDOUT
+ [-TESTMODE <string>]                  Test Mode (Name(s), all, or NONE)
+  -WORKDIR <indirectory>               Working Directory
+ [-cellawaredefects yes|no] (no)       Report Cell Aware Defects for each pattern fault
+ [-cellnamelength <integer>] (20)      Length of Cell Name field (column) in the report
+ [-experimentglobal no|yes] (no)       Include experiment status on top of global status
+ [-experimentonly no|yes] (no)         Include uncommitted tests experiment status without test mode status
+ [-faultlocation net|faultnet|pin|cellpin] (Conditional Default) Use primitive pin names, cell pin names or propagation net names to identify fault location
+ [-faults <string>]                    Range of Fault IDs
+ [-faultstatus untested|tested|testedthismode|possibly|redundant|aborted|untestable|all[,untested|tested|testedthismode|possibly|redundant|aborted|untestable|all]...] (Conditional Default) Include Only Faults with Specified Fault Status
+ [-faulttype static|dynamic|parametric|shortednet|staticbridge|dynamicbridge|iddq|all[,static|dynamic|parametric|shortednet|staticbridge|dynamicbridge|iddq|all]...] (static) Include Only Faults with Specified Types of Faults
+ [-help <string>]                      Help Facility
+ [-hierend primitive|techcell|macro|<integer>] (Conditional Default) Limit hierarchical list to this many levels deep
+ [-hierstart top|<string><integer>]    Report Hierarchical List for Block Name
+ [-ignored yes|no] (Conditional Default) Include faults that are identified as ignored
+ [-inactive yes|no] (Conditional Default) Include faults that are not active in the selected test mode
+ [-inactiveallmodes yes|no] (no)       List Faults that are Not Active in Any Testmode
+ [-includecollapsed no|yes] (yes)      Include Collapsed Faults
+ [-messagecount <string>]              Limit Messages for Specified Message Id (e.g., messagecount=XXX-710=3).
+ [-messagecounteach <integer>]         Default Limit for Each Message.
+ [-messagecounteachseverity all|excludeinfo] (all) Level of severity for which messages are to be suppressed as per messagecounteach
+ [-powercomponent <string>]            Type(s) of Low Power Components to report
+ [-ptab yes|no] (no)                   Include faults that are identified as possibly testable at best
+ [-quiet no|yes] (no)                  Quiet
+ [-reportdetails no|yes] (no)          Print Long Listing (activation/propagation requirements)
+ [-reportkey yes|no] (no)              Print Fault Status Key and Fault Type Key
+ [-statussummary no|yes|only] (yes)    Print fault status summary table for listed faults
+

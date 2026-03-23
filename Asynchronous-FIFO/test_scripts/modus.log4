@@ -1,0 +1,825 @@
+
+ 
+Copyright (C) 2002-2020 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks and Modus is a trademark 
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Type 'help legal_notices' for third party license notices. 
+Version : 20.12-s002_1, built Feb 26 2021 (linux26_64)
+Options : 
+Date    : Mon, March 16 17:36:07 2026
+Host    : lenovo-56.pilani.bits-pilani.ac.in (x86_64 Linux 4.18.0-425.19.2.el8_7.x86_64) (12*INTEL(R) XEON(R) SILVER 4510 30720KB)
+OS      : Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+INFO (TUI-300): Detected the presence of Modus database in present working directory. The 'workdir' root attribute is set to '/projects/2025H1230098P/cadence/FIFO/test_scripts'. [end TUI_300]
+@modus:root:/ 1> report_summary > reports/atpg_summary.txt
+invalid command name "report_summary"
+@modus:root:/ 2> build_fault_statistics
+invalid command name "build_fault_statistics"
+@modus:root:/ 3> help *statistics*
+Commands:
+    report_domain_fault_statistics:
+      
+     report_domain_fault_statistics is used to print out the fault coverage 
+     statistics for a clock domain.
+
+    report_fault_statistics:
+      
+    report_fault_statistics is used to print out the fault coverage 
+    statistics.
+
+    report_memory_fault_statistics:
+      
+    report_memory_fault_statistics reports the fault statistics for individual memories.  
+    The memories must adhere to the Modus memory modeling requirements. 
+
+    report_model_statistics:
+      
+    report_model_statistics is used to print out information about the 
+    Cadence Test logic model. 
+
+    report_pathfault_statistics:
+      
+    report_pathfault_statistics is used to print out the path coverage 
+    statistics resulting from path delay test generation. 
+
+    report_sdtsnt_objective_statistics:
+      
+    report_sdtsnt_objective_statistics is used to print out the coverage 
+    statistics resulting from stuck driver and shorted nets tests. 
+
+    report_vector_statistics:
+      
+    report_vector_statistics is used to print out a summary that includes the 
+    count of each hierarchical level of the vectors. 
+
+@modus:root:/ 4> help *summary*
+Commands:
+    gui_view_tsv_summary:
+      
+    gui_view_tsv_summary command is used to view summary window for all the TSV messages 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    prepare_metrics_summary:
+      
+    prepare_metrics_summary command creates a snapshot of Metrics for the runs done till the point of execution of this command.
+    This is an interactive command available only in the Tcl environment.
+
+    report_vector_summary:
+      
+     report_vector_summary is used to print a summary of each type of vector 
+     created and their effectiveness in detecting faults. 
+
+Attributes:
+  flow_summary_tcl(root):     # TCL script to run during run_flow summary.
+  flowtool_summary_tcl(root): # Tcl script to run at the end of flowtool.
+  metric_summary_metrics(root):# Summary metrics to show when creating snapshots.
+  report_message_summary(root):# Report Message Summary in ouput of command
+  Type 'help <obj_type> <attribute_name>' to get full description of object attribute
+@modus:root:/ 5> report_fault_statistics > reports/atpg_statistics.txt
+0
+@modus:root:/ 6> report_domain_fault_statistics > reports/coverage
+5
+@modus:root:/ 7> report_fault_statistics -testmode MAP1
+Starting Command: report_fault_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_fault_statistics_MAP1_031626174320-832011000 [end TDA_015]
+
+Logic Model(GM)   03/15/26
+                  17:51:50
+
+WARNING (TFM-019): Testmode MAP1 data does not exist in the fault model.  [end TFM_019] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,289,056  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:43:23 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  WARNING Messages...
+      1 WARNING (TFM-019): Testmode MAP1 data does not exist in the fault model.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+2
+@modus:root:/ 8> get_testmodes
+invalid command name "get_testmodes"
+@modus:root:/ 9> help *testmodes*
+Commands:
+    create_testmodes:
+      
+  create_testmodes command is used to build multiple testmodes. 
+  This is an interactive command available only in the Tcl environment.
+
+@modus:root:/ 10> report_fault_statistics -testmode MAP1
+Starting Command: report_fault_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_fault_statistics_MAP1_031626174456-260947000 [end TDA_015]
+
+Logic Model(GM)   03/15/26
+                  17:51:50
+
+WARNING (TFM-019): Testmode MAP1 data does not exist in the fault model.  [end TFM_019] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,290,416  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:44:58 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  WARNING Messages...
+      1 WARNING (TFM-019): Testmode MAP1 data does not exist in the fault model.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+2
+@modus:root:/ 11> build_fault_list -testmode MAP1
+invalid command name "build_fault_list"
+@modus:root:/ 12> help *build_fault_list*
+@modus:root:/ 13> # Step 1: Generate the faults for the mode
+@modus:root:/ 14> create_faults -testmode MAP1
+invalid command name "create_faults"
+@modus:root:/ 15> # Step 2: Calculate the coverage (this fills the internal table)
+@modus:root:/ 16> update_fault_statistics -testmode MAP1
+invalid command name "update_fault_statistics"
+@modus:root:/ 17> # Step 3: Print the result
+@modus:root:/ 18> help *faults*
+Commands:
+    analyze_deterministic_faults:
+      
+    analyze_deterministic_faults provides tools for analyzing the deterministic
+    testability of faults. With this command you can justify values on pins, 
+    analyze sources preventing fault activation/propagation, or trace inactive faults. 
+
+    commit_faultstatus:
+      
+  commit_faultstatus is used to commit fault status to an alternate fault model from
+  an input experiment derived from committed tests.  This is similar to committing tests
+  however in this case, the associated tests have already been committed.  Committing
+  fault status propagates it to all test modes and this optimizes the ATPG flow by realizing
+  test coverage across test modes (for faults active in multiple test modes).  Thus if a fault
+  is active in multiple test modes and is tested in a test mode, committing its fault status
+  avoids the need to target it in any other test mode where it is active.
+
+    copy_row_faultstatus:
+      
+    copy_row_faultstatus is used copy fault status from one row of cores to 
+    other rows of similar cores on a chip.
+
+    delete_diag_ignore_faults_db:
+      
+     delete_diag_ignore_faults_db command is used to delete the ignored fault database
+     created by prepare_diag_ignore_faults_db command.
+
+    prepare_core_migration_faults:
+      
+    prepare_core_migration_faults is used to create the core fault rule file 
+    to be used when building the chip-level fault model for Hierarchical Test.
+
+    prepare_detected_faults:
+      
+    prepare_detected_faults is used to create a fault rule file for the cell 
+    that identifies faults that should be marked detected when this cell is 
+    used on a higher level package.  
+    This is used when the patterns for the cell (e.g., chip) are to be 
+    reapplied on the higher level package (e.g., SCM). 
+
+    prepare_diag_ignore_faults_db:
+      
+     prepare_diag_ignore_faults_db command is used to identify hyper-active faults which are
+     dropped (reason 'activity') by simulator during fault simulation. The hyper-active faults
+     generally increases the fault simulation time in logic diagnosis. Once you determine
+     the hyper-active faults, you can eliminate the hyper-active faults from the list of faults
+     selected for fault simulation during logic diagnosis command run.
+
+    prepare_ignore_faults:
+      
+    prepare_ignore_faults is used to create a fault rule file for the cell 
+    that identifies the faults that should be ignored when this cell is 
+    used on a higher level package. 
+
+    prepare_ra_faultsubset:
+      
+    prepare_ra_faultsubset allows you to specify a subset of faults to be 
+    included in an experiment.  It also allows you to adjust the fault status.
+    The resulting experiment is used as input to create tests that target 
+    the specified faults; or ignore the faults with adjusted status. 
+
+    report_domain_faults:
+      
+     report_domain_faults is used to print out a list of faults for a clock 
+     domain that meet the specified criteria.
+
+    report_faults:
+      
+    report_faults is used to print out a list of faults that meet the specified 
+    criteria. 
+
+    report_pathfaults:
+      
+    report_pathfaults is used to print out individual path fault status 
+    resulting from path delay test generation. 
+
+    write_diag_ignore_faults_db:
+      
+     write_diag_ignore_faults_db command is used to print the list of faults (text format)
+     ignored in ignored fault database.
+
+Attributes:
+  dynamic_num_possibly_faults(design):# Number of Dynamic Possibly Tested Faults
+  dynamic_num_redundant_faults(design):# Number of Dynamic Redundant Faults
+  dynamic_num_tested_faults(design):# Number of Dynamic Tested Faults
+  dynamic_num_total_faults(design):# Total number of Dynamic Faults
+  dynamic_num_untested_faults(design):# Number of Dynamic Untested Faults
+  faults(design):             # All faults for the design
+  static_num_possibly_faults(design):# Number of Static Possibly Tested Faults
+  static_num_redundant_faults(design):# Number of Static Redundant Faults
+  static_num_tested_faults(design):# Number of Static Tested Faults
+  static_num_total_faults(design):# Total number of Static Faults
+  static_num_untested_faults(design):# Number of Static Untested Faults
+  faults(port):               # The faults for the port
+  dynamic_num_possibly_faults(hinst):# Number of Dynamic Possibly Tested Faults
+  dynamic_num_redundant_faults(hinst):# Number of Dynamic Redundant Faults
+  dynamic_num_tested_faults(hinst):# Number of Dynamic Tested Faults
+  dynamic_num_total_faults(hinst):# Total number of Dynamic Faults
+  dynamic_num_untested_faults(hinst):# Number of Dynamic Untested Faults
+  faults(hinst):              # All faults for the hinst
+  static_num_possibly_faults(hinst):# Number of Static Possibly Tested Faults
+  static_num_redundant_faults(hinst):# Number of Static Redundant Faults
+  static_num_tested_faults(hinst):# Number of Static Tested Faults
+  static_num_total_faults(hinst):# Total number of Static Faults
+  static_num_untested_faults(hinst):# Number of Static Untested Faults
+  faults(hpin):               # The faults for the hpin
+  faults(hport):              # The faults for the hport
+  dynamic_num_possibly_faults(inst):# Number of Dynamic Possibly Tested Faults
+  dynamic_num_redundant_faults(inst):# Number of Dynamic Redundant Faults
+  dynamic_num_tested_faults(inst):# Number of Dynamic Tested Faults
+  dynamic_num_total_faults(inst):# Total number of Dynamic Faults
+  dynamic_num_untested_faults(inst):# Number of Dynamic Untested Faults
+  faults(inst):               # All faults for the inst
+  static_num_possibly_faults(inst):# Number of Static Possibly Tested Faults
+  static_num_redundant_faults(inst):# Number of Static Redundant Faults
+  static_num_tested_faults(inst):# Number of Static Tested Faults
+  static_num_total_faults(inst):# Total number of Static Faults
+  static_num_untested_faults(inst):# Number of Static Untested Faults
+  faults(pin):                # The faults for the pin
+  faults(inst_hport):         # The faults for the inst_hport
+  dynamic_num_possibly_faults(hprim):# Number of Dynamic Possibly Tested Faults
+  dynamic_num_redundant_faults(hprim):# Number of Dynamic Redundant Faults
+  dynamic_num_tested_faults(hprim):# Number of Dynamic Tested Faults
+  dynamic_num_total_faults(hprim):# Total number of Dynamic Faults
+  dynamic_num_untested_faults(hprim):# Number of Dynamic Untested Faults
+  faults(hprim):              # All faults for the hprim
+  static_num_possibly_faults(hprim):# Number of Static Possibly Tested Faults
+  static_num_redundant_faults(hprim):# Number of Static Redundant Faults
+  static_num_tested_faults(hprim):# Number of Static Tested Faults
+  static_num_total_faults(hprim):# Total number of Static Faults
+  static_num_untested_faults(hprim):# Number of Static Untested Faults
+  faults(hprim_hpin):         # The faults for the hprim_hpin
+  faults(hprim_hport):        # The faults for the hprim_hport
+  dynamic_num_possibly_faults(prim):# Number of Dynamic Possibly Tested Faults
+  dynamic_num_redundant_faults(prim):# Number of Dynamic Redundant Faults
+  dynamic_num_tested_faults(prim):# Number of Dynamic Tested Faults
+  dynamic_num_total_faults(prim):# Total number of Dynamic Faults
+  dynamic_num_untested_faults(prim):# Number of Dynamic Untested Faults
+  faults(prim):               # All faults for the prim
+  static_num_possibly_faults(prim):# Number of Static Possibly Tested Faults
+  static_num_redundant_faults(prim):# Number of Static Redundant Faults
+  static_num_tested_faults(prim):# Number of Static Tested Faults
+  static_num_total_faults(prim):# Total number of Static Faults
+  static_num_untested_faults(prim):# Number of Static Untested Faults
+  faults(prim_pin):           # The faults for the prim_pin
+  faults(node):               # The faults for the node
+  collapsed_faults(fault):    # Collapsed faults associated with a representative fault index
+  equivalent_faults(fault):   # Equivalent faults for the specified fault index
+  num_dynamic_faults(sequence):# Number of dynamic faults detected in sequence
+  num_faults(sequence):       # Number of faults detected(both static and dynamic) in sequence
+  num_static_faults(sequence):# Number of static faults detected in sequence
+  num_target_faults(sequence):# Number of target faults detected in sequence
+  Type 'help <obj_type> <attribute_name>' to get full description of object attribute
+@modus:root:/ 19> report_vector_summary -testmode MAP1
+Starting Command: report_vector_summary 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_vector_summary_MAP1_031626174818-108881000 [end TDA_015]
+
+ERROR (TFW-968): The -TESTMODE MAP1 specification has an invalid value. 
+
+ Valid TESTMODE values:
+
+     FULLSCAN   
+
+[end TFW_968]
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+      1 ERROR (TFW-968): The -TESTMODE MAP1 specification has an invalid value. 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 20> report_domain_fault_statistics
+Starting Command: report_domain_fault_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_domain_fault_statistics_031626174854-790859000 [end TDA_015]
+
+ERROR (TFW-901): Required option -TESTMODE must be specified.  [end TFW_901] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-901): Required option -TESTMODE must be specified.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 21> verify_test_structures -testmode MAP1
+Starting Command: verify_test_structures 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_verify_test_structures_MAP1_031626175116-379994000 [end TDA_015]
+
+ERROR (TFW-968): The -TESTMODE MAP1 specification has an invalid value. 
+
+ Valid TESTMODE values:
+
+     FULLSCAN   
+
+[end TFW_968]
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+      1 ERROR (TFW-968): The -TESTMODE MAP1 specification has an invalid value. 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 22> verify_test_structures -testmode FULLSCAN
+Starting Command: verify_test_structures 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_verify_test_structures_FULLSCAN_031626175131-610749000 [end TDA_015]
+
+INFO (TSV-900): verify_test_structures processing has started Mon Mar 16 17:51:31 2026    [end TSV_900] 
+------------------- verify_test_structures Process Preview ---------------------
+  apply constraints ...................................... constraints=yes    
+  Print 1 message per source of clock race ............... limitcisource=yes  
+  Print 1 Message per capture of clock race .............. limitcicapture=yes 
+  Check for mutually exclusive gating logic (MEG) ........ megraces=yes       
+  Use raise message severity attributes if they exist .... raisemsgsev=no    
+  Reporting options ...................................... report[option]=yes/no 
+    Process Preview ......................................   preview=yes     
+    Circuit Statistics ...................................   circuit=yes      
+    Message Summary ......................................   summary=yes      
+    Specific Messages ....................................   specific=yes     
+    Tests Status .........................................   status=no       
+    Output File Names and Size ...........................   filestats=yes    
+    Display messages for cloaked objects .................   cloakedobj=no   
+  Rerun verify_test_structures test(s) ................... reruntests=no     
+  Use message suppression attributes if they exist ....... suppressmsg=no    
+  Test selected .......................................... test[option]=yes/no 
+    Analyze test clock control of memory elements ........   testclockusage=yes 
+    Analyze three-state drivers for contention ...........   tsdcontention=yes 
+    Analyze feedback loops and keeper devices ............   feedback=yes 
+    Analyze clock choppers ...............................   clockchopper=yes 
+    Analyze flip-flop and latch scan characteristics .....   latchusage=yes 
+    Analyze explicit fixed value latches .................   explicitfvlatch=yes 
+    Analyze potential clock signal races .................   clocksignalraces=yes 
+    Analyze internal scan chains .........................   internalscanchains=yes 
+
+--------------------Circuit Statistics--------------------
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          1,396  Blocks                         856  Blocks
+          4,328  Pins                           856  Nodes
+          2,416  Nets
+
+Primary Inputs:                      Primary Outputs:
+         16  Input Only                        12  Output Only
+          0  Input/Output                       0  Input/Output
+         16  Total Inputs                      12  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+         28  Tied to 0                          0  Two-State
+         14  Tied to 1                          0  Three-State
+          8  Tied to X                          0  Total Dotted Nets
+         50  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+         44  MUX2s
+          0  Latches
+
+
+         44  Rising  Edge Flop w/Set-Dominant and Reset Port
+         44  Total Flops
+
+        163  Technology Library Cell Instances
+
+[end TLM_055] 
+
+Test Function Pin Information for Test Mode:  FULLSCAN
+-------------------------------------------
+
+          3  SC    (System  Clock)             Pins
+          0  PC    (P Shift Clock)             Pins
+          2  EC    (E Shift Clock)             Pins
+
+          0  OSC   (Oscillator)                Pins
+
+          0  TI    (Test Inhibit)              Pins
+          1  SE    (Scan Enable)               Pins
+          0  CI    (Clock Isolation)           Pins
+          0  OI    (Output Inhibit)            Pins
+
+          2  SI    (Scan Input)                Pins
+          2  SO    (Scan Output)               Pins
+
+  Pin Index    Type Test Function                         Pin Name / Net Name
+  ---------    ---- ----------------------------------    -------------------
+         11      PI  +SC                                  rst / rst
+         10      PI  -EC  -SC                             rclk / rclk
+         15      PI  -EC  -SC                             wclk / wclk
+         12      PI  +SE                                  scan_en / scan_en
+         13      PI   SI                                  scan_in / scan_in
+          0      PI   SI1                                 DFT_sdi_1 / DFT_sdi_1
+         27      PO   SO                                  scan_out / scan_out
+         16      PO   SO1                                 DFT_sdo_1 / DFT_sdo_1
+
+  
+   Analyze test clocks' control of memory elements    
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze test clocks' control of memory elements process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze three-state drivers for contention 
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze three-state drivers for contention process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze feedback loops and keeper devices          
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze feedback loops and keeper devices process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze clock choppers                             
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze clock choppers process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze flip-flop and latch scan characteristics   
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze flip-flop and latch scan characteristics process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze explicit fixed value latches 
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze explicit fixed value latches process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze potential clock signal races               
+   Check for mutually exclusive gating logic (MEG)    
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze potential clock signal races process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+  
+   Analyze internal scan chains 
+INFO (TSV-922): This test has been run previously and will not be rerun.  [end TSV_922] 
+
+Analyze channel inputs for validity process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.00
+                                                                          
+****************************************************************************** 
+*          verify_test_structures Analysis Summary for This Invocation                        
+****************************************************************************** 
+Count    Error Message  
+-----    -------------  
+    1    INFO (TSV-068): The length of the longest scan chain is 22 bit positions, which is 100% of the average scan chain length 22 (based on 44 total scan chain bits and 2 valid scan chains).   
+    2    INFO (TSV-378):Scan chain beginning at 'pin {pinname}' and ending at 'pin {pinname}' is controllable and observable. The length of the scan chain is {n} bit positions.    
+    1    INFO (TSV-567): There are 2 controllable scan chains fed by Scan In (SI) primary inputs.   
+    1    INFO (TSV-568): There are 2 observable scan chains feeding to Scan Out (SO) primary outputs.   
+    1    INFO (TSV-569): There are 0 controllable scan chains fed by on-product Pattern Generator(s).   
+    1    INFO (TSV-570): There are 0 observable scan chains feeding to on-product Multiple-Input Signature Register (MISRs).   
+******************************************************************************* 
+
+--------------------File Information----------------------
+          57344 /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/TSVmessageFile.FULLSCAN 
+
+INFO (TSV-908): verify_test_structures processing complete.   [end TSV_908] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            5,914,048  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:02.61                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:51:34 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TLM-055): Design Summary
+      1 INFO (TSV-900): verify_test_structures processing has started Mon Mar 16 17:51:31 2026     
+      1 INFO (TSV-908): verify_test_structures processing complete.    
+      8 INFO (TSV-922): This test has been run previously and will not be rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+0
+@modus:root:/ 23> create_logic_tests -testmode FULLSCAN -effort high
+Starting Command: create_logic_tests 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_create_logic_tests_FULLSCAN_031626175159-600835000 [end TDA_015]
+
+ERROR (TFW-901): Required option -EXPERIMENT must be specified.  [end TFW_901] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-901): Required option -EXPERIMENT must be specified.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 24> create_logic_tests -testmode FULLSCAN -experiment run1 -effort high
+Starting Command: create_logic_tests 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_create_logic_tests_FULLSCAN_run1_031626175247-422988000 [end TDA_015]
+
+
+
+****************************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+****************************************************************************************************
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  1316         1250            0            0           66  94.98  94.98
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  1388         1250            0            0          138  90.06  90.06
+****************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Static Logic Test generation                                           [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-221):    ---     ---        ---    94.98%   90.06%           66           00:02.12    [end TDA_221] 
+INFO (TTC-110): Ending Static Logic Test generation                                             [end TTC_110] 
+*************************************************************************************************************
+
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  1316         1250            0            0           66  94.98  94.98
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  1388         1250            0            0          138  90.06  90.06
+****************************************************************************************************
+INFO (TTC-135): The pattern file (TBDbin) is empty.  No patterns have been saved for this experiment. [end TTC_135] 
+
+(I) File(s) generated (bytes and name):
+
+          61440 /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/faultStatus.FULLSCAN.run1
+           2385 /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/TBDbin.FULLSCAN.run1
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,363,200  bytes
+
+                      CPU Time =    0:00:00.02
+                  Elapsed Time =    0:00:02.12                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:52:49 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      2 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -   
+      1 INFO (TDA-221):    ---     ---        ---    94.98%   90.06%           66           00:02.12     
+      2 INFO (TTC-110): Starting Static Logic Test generation                                            
+      1 INFO (TTC-135): The pattern file (TBDbin) is empty.  No patterns have been saved for this experiment.  
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+0
+@modus:root:/ 25> update_fault_statistics -testmode FULLSCAN
+invalid command name "update_fault_statistics"
+@modus:root:/ 26> help *update_fault_statistics*
+@modus:root:/ 27> report_fault_statistics -testmode FULLSCAN
+Starting Command: report_fault_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_fault_statistics_FULLSCAN_031626175432-027455000 [end TDA_015]
+
+Logic Model(GM)   03/15/26
+                  17:51:50
+File Id     faultModel        faultStatus
+Created (GM)  03/15/26           03/15/26
+              17:52:03           17:52:03
+Modified(GM)  03/15/26           03/15/26
+              17:52:03           17:52:15
+Code Level        2020.2             2020.2            
+Max Fault Id          1388
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-701):  Fault Statistics for Testmode:  FULLSCAN  : 
+
+
+                 ---- ATCov ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static        94.98  90.06         1316         1250            0            0           66         1388         1250            0            0          138
+Collapsed Static    94.85  87.92          913          866            0            0           47          985          866            0            0          119
+PI Static          100.00  50.00           16           16            0            0            0           32           16            0            0           16
+PO Static           33.33  33.33           24            8            0            0           16           24            8            0            0           16
+
+Total Dynamic                               0
+
+Parametric        
+
+IDDq                 0.00   0.00         1388            0                                   1388         1388            0                                   1388
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+[end TFM_701]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,303,408  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:54:34 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-701):  Fault Statistics for Testmode:  FULLSCAN  : 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+0
+@modus:root:/ 28> report_fault_statistics -testmode FULLSCAN > reports/stats.txt
+0
+@modus:root:/ 29> report_faults -testmode FULLSCAN -experiment run1 -type untested > reports/untested_run1.txt
+5
+@modus:root:/ 30> report_faults -testmode FULLSCAN -experiment run1 -type all > reports/untested_run1.txt
+0
+@modus:root:/ 31> write_vectors -testmode FULLSCAN -experiment run1 -format verilog tbdata/patterns.v
+Starting Command: write_vectors 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_write_vectors_FULLSCAN_run1_031626180057-923358000 [end TDA_015]
+
+ERROR (TFW-021): The option -tbdata/patterns.v is not valid for the write_vectors command line.  [end TFW_021] 
+ERROR (TFW-021): The option -experiment is not valid for the write_vectors command line.  [end TFW_021] 
+ERROR (TFW-021): The option -format is not valid for the write_vectors command line.  [end TFW_021] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      3 ERROR (TFW-021): The option -tbdata/patterns.v is not valid for the write_vectors command line.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5

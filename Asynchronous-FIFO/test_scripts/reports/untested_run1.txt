@@ -1,0 +1,136 @@
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_FULLSCAN_run1_031626175946-658093000 [end TDA_015]
+
+
+TFMlist 
+
+Logic Model(GM)   03/15/26
+                  17:51:50
+File Id     faultModel        faultStatus         experiment
+Created (GM)  03/15/26           03/15/26           03/16/26
+              17:52:03           17:52:03           12:22:47
+Modified(GM)  03/15/26           03/15/26           03/16/26
+              17:52:03           17:52:15           12:22:49
+Code Level        2020.2             2020.2             2020.2            
+Max Fault Id          1388
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-705): Testmode: FULLSCAN Experiment: run1 Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+        35 Uxs     OSA0           PO                      data_out[0]   
+      1384 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[0]   
+        36 Uxs     OSA1           PO                      data_out[0]   
+      1383 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[0]   
+        37 Uxs     OSA0           PO                      data_out[1]   
+      1382 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[1]   
+        38 Uxs     OSA1           PO                      data_out[1]   
+      1381 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[1]   
+        39 Uxs     OSA0           PO                      data_out[2]   
+      1380 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[2]   
+        40 Uxs     OSA1           PO                      data_out[2]   
+      1379 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[2]   
+        41 Uxs     OSA0           PO                      data_out[3]   
+      1378 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[3]   
+        42 Uxs     OSA1           PO                      data_out[3]   
+      1377 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[3]   
+        43 Uxs     OSA0           PO                      data_out[4]   
+      1376 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[4]   
+        44 Uxs     OSA1           PO                      data_out[4]   
+      1375 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[4]   
+        45 Uxs     OSA0           PO                      data_out[5]   
+      1374 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[5]   
+        46 Uxs     OSA1           PO                      data_out[5]   
+      1373 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[5]   
+        47 Uxs     OSA0           PO                      data_out[6]   
+      1372 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[6]   
+        48 Uxs     OSA1           PO                      data_out[6]   
+      1371 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[6]   
+        49 Uxs     OSA0           PO                      data_out[7]   
+      1370 cUxs    OSA0           FIFO_Memory_DEPTH64*    fifom.dout[7]   
+        50 Uxs     OSA1           PO                      data_out[7]   
+      1369 cUxs    OSA1           FIFO_Memory_DEPTH64*    fifom.dout[7]   
+       505 Ud      OSA0           CLKINVX1                drc_bufs.Y   
+      1388 cUd     ISA1           CLKINVX1                drc_bufs.A   
+       509 Ud      OSA0           CLKINVX1                drc_bufs7938.Y   
+      1386 cUd     ISA1           CLKINVX1                drc_bufs7938.A   
+       587 Ud      ISA0           NOR2BXL                 g2__2346.B   
+       591 Ud      OSA0           CLKINVX1                g6618.Y   
+      1365 cUd     ISA1           CLKINVX1                g6618.A   
+       597 Ud      ISA0           NOR2XL                  g7769__2398.B   
+       598 Ud      ISA0           NOR2BXL                 g7946__6417.B   
+       600 Ud      ISA0           NOR2BXL                 g7945__7410.B   
+       604 Ud      ISA0           NOR2BXL                 g7944__1666.B   
+       611 Ud      ISA0           NOR2XL                  g7772__6260.A   
+       666 Ud      ISA0           NOR2XL                  g7921__6131.B   
+       686 Ud      ISA0           NOR2XL                  g7918__5122.A   
+       722 Ud      ISA0           NOR2XL                  g7911__3680.A   
+       735 Ud      ISA0           NOR2XL                  g7907__8428.B   
+       765 Ud      ISA1           AND2XL                  g7798__2883.A   
+       792 Ud      ISA0           NOR2XL                  g7895__1666.B   
+       796 Ud      ISA0           NOR2XL                  g7894__2346.A   
+       797 Ud      ISA1           AND2XL                  g7808__5477.A   
+       803 Ud      ISA1           AND2XL                  g7809__2398.A   
+       835 Ud      ISA0           NOR2XL                  g7888__4733.A   
+       869 Ud      ISA0           NOR2XL                  g7830__1705.A   
+       875 Ud      ISA1           AND2XL                  g7831__5122.A   
+       883 Ud      ISA0           NOR2XL                  g7832__8246.B   
+       884 Ud      ISA0           NOR2XL                  g7878__7098.B   
+       889 Ud      ISA1           AND2XL                  g7833__7098.B   
+       907 Ud      ISA0           NOR2XL                  g7838__5115.A   
+       915 Ud      ISA1           AND2XL                  g7841__7482.B   
+       920 Ud      ISA0           NOR2XL                  g7868__1617.A   
+       921 Ud      ISA1           AND2XL                  g7842__4733.B   
+       922 Ud      ISA0           NOR2XL                  g7867__3680.B   
+       924 Ud      ISA0           NOR2XL                  g7866__6783.B   
+       969 Ud      ISA0           NOR2XL                  g7853__7410.B   
+
+[end TFM_705]
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :           66
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):            0
+ ATPG Untestable       :           66
+   Ud                  :           34
+   Uxs                 :           32
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            9,521,232  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Monday Mar 16 17:59:48 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Testmode: FULLSCAN Experiment: run1 Fault List:   
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

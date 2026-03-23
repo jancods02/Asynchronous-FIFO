@@ -1,0 +1,1331 @@
+
+ 
+Copyright (C) 2002-2020 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks and Modus is a trademark 
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Type 'help legal_notices' for third party license notices. 
+Version : 20.12-s002_1, built Feb 26 2021 (linux26_64)
+Options : 
+Date    : Wed, March 18 13:49:53 2026
+Host    : lenovo-56.pilani.bits-pilani.ac.in (x86_64 Linux 4.18.0-425.19.2.el8_7.x86_64) (12*INTEL(R) XEON(R) SILVER 4510 30720KB)
+OS      : Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+INFO (TUI-300): Detected the presence of Modus database in present working directory. The 'workdir' root attribute is set to '/projects/2025H1230098P/cadence/FIFO/test_scripts'. [end TUI_300]
+@modus:root:/ 1> help *report*
+Commands:
+    report_callout:
+      
+    report_callout generates a callout report.
+
+    report_chains:
+      
+    report_chains command is used to report the information about the scan chains 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_clock_gates:
+      
+    report_clock_gates command is used to report the clock gate information for lowpower parts 
+
+    report_cluster_info:
+      
+    report_cluster_info is used to report cluster, region and hard to control/observe
+    nets associated with an experiment created by analyze_lbist_testpoints. 
+
+    report_context:
+      
+    report_context command is used to report the current context in tcl environment. 
+    This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_diag_scanchain_xorsegments:
+      
+    report_diag_scanchain_xorsegments is used to report all the XOR segments identified
+    through generation of the special XOR patterns by create_diag_tests_scanchain_xorsegments.
+
+    report_domain_fault_statistics:
+      
+     report_domain_fault_statistics is used to print out the fault coverage 
+     statistics for a clock domain.
+
+    report_domain_faults:
+      
+     report_domain_faults is used to print out a list of faults for a clock 
+     domain that meet the specified criteria.
+
+    report_fault_effects:
+      
+    report_fault_effects is used to perform simulation on the specified 
+    list of faults and reports the fault effects. 
+
+    report_fault_statistics:
+      
+    report_fault_statistics is used to print out the fault coverage 
+    statistics.
+
+    report_faults:
+      
+    report_faults is used to print out a list of faults that meet the specified 
+    criteria. 
+
+    report_flow:
+      
+    report_flow command is used to report the flow statistics. 
+    This is an interactive command available only in the Tcl environment.
+
+    report_good_machine_states:
+      
+    report_good_machine_states is used to perform good machine simulation on the specified 
+    list of sequences and report simulated values on the user specified set of nodes. 
+
+    report_groups_for_macro_tests:
+      
+    report_groups_for_macro_tests is used to print out the grouping information
+    for macro tests.  The grouping is determined by verify_macro_isolation 
+
+    report_instances:
+      
+    report_instances command is used to report the information about the specified 
+    instances. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_memory_fault_statistics:
+      
+    report_memory_fault_statistics reports the fault statistics for individual memories.  
+    The memories must adhere to the Modus memory modeling requirements. 
+
+    report_messages:
+      
+  report_messages command is used to report all types of messages (info,warning,severe_warning,error) for the command. This is an interactive command available only in the Tcl environment.
+
+    report_metric:
+      
+    report_metric command is used to create a webpage for the populated Metrics.
+    This is an interactive command available only in the Tcl environment.
+
+    report_miscompare_database:
+      
+    report_miscompare_database command is used to report the contents of miscompare database. 
+     This is an interactive command available only in the Tcl environment.
+
+    report_model_statistics:
+      
+    report_model_statistics is used to print out information about the 
+    Cadence Test logic model. 
+
+    report_odometer:
+      
+    report_odometer is used to report details of an odometer.  
+    This is an interactive command available only in the Tcl environment.
+
+    report_pathfault_statistics:
+      
+    report_pathfault_statistics is used to print out the path coverage 
+    statistics resulting from path delay test generation. 
+
+    report_pathfaults:
+      
+    report_pathfaults is used to print out individual path fault status 
+    resulting from path delay test generation. 
+
+    report_physical_coordinates_for_instance:
+      
+    report_physical_coordinates_for_instance command is used to report all X-Y coordinates of
+    an instance box in OpenAccess physical database. This is an interactive command available
+    only in the Tcl environment.
+
+    report_physical_correlation:
+      
+    report_physical_correlation is used to generate a report which indicates
+    the degree of correlation between the nets and blocks (instances of technology
+    cells), in the Modus logic model and a corresponding physical design
+    in an OpenAccess database. 
+
+    report_physical_diagnostics_setup:
+      
+    report_physical_diagnostics_setup command is used to report all the options that are used
+    to access OpenAccess physical database. This is an interactive command available only in the
+    Tcl environment.
+
+    report_physical_instance_from_coordinates:
+      
+    report_physical_instance_from_coordinates command is used to report all the instances that are on
+    the given X-Y coordinate in OpenAccess physical database. The command might return multiple instances
+    in case more than one instance is present at the same location. This is an interactive command 
+    available only in the Tcl environment.
+
+    report_physical_objects_from_coordinates:
+      
+    report_physical_objects_from_coordinates command is used to report all the objects such as
+    shapes or pins present at a given X-Y coordinate in OpenAccess physical database. This is
+    an interactive command available only in the Tcl environment.
+
+    report_physical_trends:
+      
+    report_physical_trends is used to report the physical diagnostics trends for 
+    the specified nets of interest.
+
+    report_pins:
+      
+    report_pins command is used to report the information about the specified pins.
+    This is an interactive command available only in the Tcl environment and operates
+    on the context set using set_context command.
+
+    report_processing_status:
+      
+    report_processing_status is used to print out the status of the process 
+    audits.
+
+    report_running_commands:
+      
+    report_running_commands command is used to report currenty running processes running in the Modus 
+    Tcl console. This is an interactive command available only in the Tcl environment.
+
+    report_scan_flop_fault_effects:
+      
+    report_scan_flop_fault_effects is used to perform simulation on the specified 
+    list of scan flop faults and reports the fault effects. 
+
+    report_scanchain_holes:
+      
+    report_scanchains:
+      
+    report_scanchains is used to perform the tracing and reporting of scan path 
+    for the specified scan chain(s).
+
+    report_scandiag_dictionary:
+      
+    report_scandiag_dictionary is used to report the information stored in the scan 
+    chain diagnostics dictionary files generated by analyze_chain_diagnosability.
+
+    report_sdc:
+      
+     report_sdc is used to report the design constraints that were processed by the read_sdc command 
+     from an SDC (Synopsys(R) Design Constraint) file.
+
+    report_sdql:
+      
+    report_sdql is used to calculate the SDQL effectiveness of a set of test patterns.
+
+    report_sdtsnt_objective_statistics:
+      
+    report_sdtsnt_objective_statistics is used to print out the coverage 
+    statistics resulting from stuck driver and shorted nets tests. 
+
+    report_sdtsnt_objectives:
+      
+    report_sdtsnt_objectives is used to print out the objectives used for 
+    stuck driver and/or shorted nets tests. 
+
+    report_sequences:
+      
+    report_sequences is used to print out the binary sequence 
+    definition file in ascii format. 
+
+    report_simulation_values:
+      
+    report_simulation_values command is used to report values on a list of pins/nodes while simulating 
+    a sequence or an event. This is an interactive command available only in the Tcl environment.
+
+    report_test_structures:
+      
+    report_test_structures is used to print out information about the test 
+    structures in the logic model as configured for the specified test mode; 
+    such as, information about the scan chains. 
+
+    report_testfunctions:
+      
+    report_testfunctions command is used to report the information about the pins 
+    associated with the specified test function names. This is an interactive command 
+    available only in the Tcl environment and operates on the context set using 
+    set_context command.
+
+    report_tester_description_rule:
+      
+    report_tester_description_rule is used to print the TDR (Tester Description
+    Rule) data. 
+
+    report_tsv_messages:
+      
+    report_tsv_messages command is used to report all the TSV messages 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_vector_simulation_options:
+      
+    report_vector_simulation_options is used to print the simulation options 
+    that were in effect when the vectors were created. 
+
+    report_vector_statistics:
+      
+    report_vector_statistics is used to print out a summary that includes the 
+    count of each hierarchical level of the vectors. 
+
+    report_vector_summary:
+      
+     report_vector_summary is used to print a summary of each type of vector 
+     created and their effectiveness in detecting faults. 
+
+    report_vector_volume:
+      
+    report_vector_volume is used to calculate the test data volume based on 
+    test pattern statistics.  It also estimates whether the data will fit in 
+    the tester buffer. 
+
+    report_vectors:
+      
+    report_vectors is used to print out the binary vectors in 
+    ascii format. 
+
+    report_vectors_for_core_migration_tests:
+      
+    report_vectors_for_core_migration_tests is used to print out the binary vectors, 
+    that are intended for test data migration, in ascii format. 
+
+    report_vectors_for_macro_tests:
+      
+    report_vectors_for_macro_tests is used to print out the binary vectors, 
+    that are intended for test data migration, in ascii format. 
+
+    report_verify_test_structures_messages:
+      
+    report_verify_test_structures_messages is used to print out the messages 
+    resulting from a previous invocation of verify_test_structures.
+
+    report_volume_database_info:
+      
+       ================report_volume_database_info=================
+      USAGE:- report_volume_database_info WORKDIR=<WORKDIR>        
+      This command reports Volume Diagnostics Database Details     
+      It reports the following details:-                           
+      a. Whether the specified WORKDIR is connected to Volume Diagnostics Database Directory 
+      b. If it is connected to Volume Database Directory:-
+            Reports Database connection Details
+            If server for the specified database is up and running
+              If so, it reports all the databases
+      ============================================================
+
+Attributes:
+  flow_report_directory(root):# Flow directory where reports are written.
+  report_context(root):       # The attribute should be set to 'true' if current context is to be reported in reporting commands.
+  report_header_messages(root):# Report Header Messages in ouput of command
+  report_memory_details(root):# Report Memory Details in ouput of command
+  report_message_summary(root):# Report Message Summary in ouput of command
+  reportchannelio(root):      # Report Channel Heads and Tails
+  reportchannelmaskchain(root):# Report Channel Mask Chains
+  reportchannelmaskstate(root):# report channel mask state values
+  reportconstraints(root):    # report constraints
+  reportopcgregisters(root):  # report opcg registers 
+  reportscanchain(root):      # Report Scan Chain Flops/Latches
+  disable_report(define_testmode_obj):# Disable reporting
+  report_options(define_testmode_obj):# Reporting options
+  Type 'help <obj_type> <attribute_name>' to get full description of object attribute
+@modus:root:/ 2> report_faults -status Untestable -test_mode FULLSCAN
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031826135207-286869000 [end TDA_015]
+
+ERROR (TFW-021): The option -test_mode is not valid for the report_faults command line.  [end TFW_021] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-021): The option -test_mode is not valid for the report_faults command line.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 3> help *report_faults*
+Commands:
+    report_faults:
+
+    report_faults is used to print out a list of faults that meet the specified 
+    criteria. 
+
+
+report_faults:
+
+ [-H]                                  Help text
+ [-h]                                  Help text
+ [-ALTFAULT <string>]                  Alternate Fault Model
+ [-COMET <string>]                     COMET Name(s)
+ [-EXPERIMENT <string>]                Experiment Name
+ [-LOG no|all|summary|nosummary] (all) Customize Data Written to Log
+ [-LOGCOMPRESS yes|no] (no)            Compress the log file
+ [-LOGFILE <outfilename>]              Write to specified log file
+ [-STDOUT no|all|summary|nosummary] (all) Customize Data Written to STDOUT
+ [-TESTMODE <string>]                  Test Mode (Name(s), all, or NONE)
+  -WORKDIR <indirectory>               Working Directory
+ [-cellawaredefects yes|no] (no)       Report Cell Aware Defects for each pattern fault
+ [-cellnamelength <integer>] (20)      Length of Cell Name field (column) in the report
+ [-experimentglobal no|yes] (no)       Include experiment status on top of global status
+ [-experimentonly no|yes] (no)         Include uncommitted tests experiment status without test mode status
+ [-faultlocation net|faultnet|pin|cellpin] (Conditional Default) Use primitive pin names, cell pin names or propagation net names to identify fault location
+ [-faults <string>]                    Range of Fault IDs
+ [-faultstatus untested|tested|testedthismode|possibly|redundant|aborted|untestable|all[,untested|tested|testedthismode|possibly|redundant|aborted|untestable|all]...] (Conditional Default) Include Only Faults with Specified Fault Status
+ [-faulttype static|dynamic|parametric|shortednet|staticbridge|dynamicbridge|iddq|all[,static|dynamic|parametric|shortednet|staticbridge|dynamicbridge|iddq|all]...] (static) Include Only Faults with Specified Types of Faults
+ [-help <string>]                      Help Facility
+ [-hierend primitive|techcell|macro|<integer>] (Conditional Default) Limit hierarchical list to this many levels deep
+ [-hierstart top|<string><integer>]    Report Hierarchical List for Block Name
+ [-ignored yes|no] (Conditional Default) Include faults that are identified as ignored
+ [-inactive yes|no] (Conditional Default) Include faults that are not active in the selected test mode
+ [-inactiveallmodes yes|no] (no)       List Faults that are Not Active in Any Testmode
+ [-includecollapsed no|yes] (yes)      Include Collapsed Faults
+ [-messagecount <string>]              Limit Messages for Specified Message Id (e.g., messagecount=XXX-710=3).
+ [-messagecounteach <integer>]         Default Limit for Each Message.
+ [-messagecounteachseverity all|excludeinfo] (all) Level of severity for which messages are to be suppressed as per messagecounteach
+ [-powercomponent <string>]            Type(s) of Low Power Components to report
+ [-ptab yes|no] (no)                   Include faults that are identified as possibly testable at best
+ [-quiet no|yes] (no)                  Quiet
+ [-reportdetails no|yes] (no)          Print Long Listing (activation/propagation requirements)
+ [-reportkey yes|no] (no)              Print Fault Status Key and Fault Type Key
+ [-statussummary no|yes|only] (yes)    Print fault status summary table for listed faults
+
+@modus:root:/ 4> report_faults -statussummary yes -testmode FULLSCAN
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_FULLSCAN_031826135307-943750000 [end TDA_015]
+
+
+TFMlist 
+
+Logic Model(GM)   03/18/26
+                  08:16:41
+File Id     faultModel        faultStatus
+Created (GM)  03/18/26           03/18/26
+              08:16:55           08:16:55
+Modified(GM)  03/18/26           03/18/26
+              08:16:55           08:19:05
+Code Level        2020.2             2020.2            
+Max Fault Id         13386
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-705): Testmode: FULLSCAN   Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+      7846 Ud      ISA0           NOR2BXL                 g23407.B   
+      7882 Ud      ISA0           NOR2BXL                 g23402.B   
+      7886 Ud      ISA0           NOR2BXL                 g23401.B   
+      7890 Ud      ISA0           NOR2BXL                 g23400.B   
+      7894 Ud      ISA0           NOR2BXL                 g23399.B   
+      7898 Ud      ISA0           NOR2BXL                 g23398.B   
+      7904 Ud      OSA0           CLKINVX1                g22432.Y   
+     13250 cUd     ISA1           CLKINVX1                g22432.A   
+      7908 Ud      OSA0           CLKINVX1                g22430.Y   
+     13246 cUd     ISA1           CLKINVX1                g22430.A   
+      7989 Ud      OSA0           BUFX2                   drc_buf_sp23393.Y   
+     13176 cUd     ISA0           BUFX2                   drc_buf_sp23393.A   
+      7999 Ud      ISA0           NOR2XL                  g21184__2398.A   
+      8007 Ud      ISA0           NOR2XL                  g21185__5107.B   
+      8167 Ud      ISA1           AND2XL                  g21214__9315.A   
+      8173 Ud      ISA1           AND2XL                  g21217__5115.A   
+      8181 Ud      ISA1           AND2XL                  g21218__1705.B   
+      8187 Ud      ISA0           NOR2XL                  g21219__5122.B   
+      8251 Ud      ISA1           AND2XL                  g21233__8428.A   
+      8259 Ud      ISA0           NOR2XL                  g21234__5477.B   
+      8277 Ud      ISA1           AND2XL                  g21237__2346.B   
+      8323 Ud      ISA0           NOR2XL                  g21251__6161.A   
+      8361 Ud      ISA1           AND2XL                  g21259__2802.A   
+      8369 Ud      ISA1           AND2XL                  g21260__1705.B   
+      8413 Ud      ISA0           NOR2XL                  g21281__2883.B   
+      8489 Ud      ISA0           NOR2XL                  g21295__5477.A   
+      8497 Ud      ISA0           NOR2XL                  g21296__5122.B   
+      8625 Ud      ISA0           NOR2XL                  g21318__3680.A   
+      8724 Ud      ISA0           NOR2XL                  g22292__3680.A   
+      8726 Ud      ISA1           AND2XL                  g22291__1617.B   
+      8747 Ud      ISA0           NOR2XL                  g21608__6161.B   
+      9061 Ud      ISA0           NOR2XL                  g21640__2883.A   
+      9445 Ud      ISA0           NOR2XL                  g21926__9945.B   
+      9475 Ud      ISA0           NOR2XL                  g21932__9945.A   
+
+[end TFM_705]
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :           34
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):            0
+ ATPG Untestable       :           34
+   Ud                  :           34
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,019,408  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.01                    [end TDA_001]
+
+     Date Ended:  Wednesday Mar 18 13:53:10 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Testmode: FULLSCAN   Fault List:   
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+0
+@modus:root:/ 5> report_faults -statussummary yes -testmode FULLSCAN -experiment asynchronous_fifo_atpg
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_FULLSCAN_asynchronous_fifo_atpg_031826135339-050680000 [end TDA_015]
+
+
+TFMlist 
+
+Logic Model(GM)   03/18/26
+                  08:16:41
+WARNING (TFM-071): Experiment asynchronous_fifo_atpg is not registered.  [end TFM_071] 
+WARNING (TFM-072): Unable to open Experiment file /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/faultStatus.FULLSCAN.asynchronous_fifo_atpg.  [end TFM_072] 
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :            0
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):            0
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,020,640  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Wednesday Mar 18 13:53:40 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+  WARNING Messages...
+      1 WARNING (TFM-071): Experiment asynchronous_fifo_atpg is not registered.   
+      1 WARNING (TFM-072): Unable to open Experiment file /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/faultStatus.FULLSCAN.asynchronous_fifo_atpg.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+2
+@modus:root:/ 6> report_faults -statussummary yes -testmode FULLSCAN  > reports/faults.txt
+0
+@modus:root:/ 7> help *reports_*
+@modus:root:/ 8> help *reports*
+Attribute: reportscanchain (on obj_type: root)
+  Description:     Report Scan Chain Flops/Latches
+  default_value:   
+  is_settable:     true
+  data_type:       string
+
+@modus:root:/ 9> help *report*
+Commands:
+    report_callout:
+      
+    report_callout generates a callout report.
+
+    report_chains:
+      
+    report_chains command is used to report the information about the scan chains 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_clock_gates:
+      
+    report_clock_gates command is used to report the clock gate information for lowpower parts 
+
+    report_cluster_info:
+      
+    report_cluster_info is used to report cluster, region and hard to control/observe
+    nets associated with an experiment created by analyze_lbist_testpoints. 
+
+    report_context:
+      
+    report_context command is used to report the current context in tcl environment. 
+    This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_diag_scanchain_xorsegments:
+      
+    report_diag_scanchain_xorsegments is used to report all the XOR segments identified
+    through generation of the special XOR patterns by create_diag_tests_scanchain_xorsegments.
+
+    report_domain_fault_statistics:
+      
+     report_domain_fault_statistics is used to print out the fault coverage 
+     statistics for a clock domain.
+
+    report_domain_faults:
+      
+     report_domain_faults is used to print out a list of faults for a clock 
+     domain that meet the specified criteria.
+
+    report_fault_effects:
+      
+    report_fault_effects is used to perform simulation on the specified 
+    list of faults and reports the fault effects. 
+
+    report_fault_statistics:
+      
+    report_fault_statistics is used to print out the fault coverage 
+    statistics.
+
+    report_faults:
+      
+    report_faults is used to print out a list of faults that meet the specified 
+    criteria. 
+
+    report_flow:
+      
+    report_flow command is used to report the flow statistics. 
+    This is an interactive command available only in the Tcl environment.
+
+    report_good_machine_states:
+      
+    report_good_machine_states is used to perform good machine simulation on the specified 
+    list of sequences and report simulated values on the user specified set of nodes. 
+
+    report_groups_for_macro_tests:
+      
+    report_groups_for_macro_tests is used to print out the grouping information
+    for macro tests.  The grouping is determined by verify_macro_isolation 
+
+    report_instances:
+      
+    report_instances command is used to report the information about the specified 
+    instances. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_memory_fault_statistics:
+      
+    report_memory_fault_statistics reports the fault statistics for individual memories.  
+    The memories must adhere to the Modus memory modeling requirements. 
+
+    report_messages:
+      
+  report_messages command is used to report all types of messages (info,warning,severe_warning,error) for the command. This is an interactive command available only in the Tcl environment.
+
+    report_metric:
+      
+    report_metric command is used to create a webpage for the populated Metrics.
+    This is an interactive command available only in the Tcl environment.
+
+    report_miscompare_database:
+      
+    report_miscompare_database command is used to report the contents of miscompare database. 
+     This is an interactive command available only in the Tcl environment.
+
+    report_model_statistics:
+      
+    report_model_statistics is used to print out information about the 
+    Cadence Test logic model. 
+
+    report_odometer:
+      
+    report_odometer is used to report details of an odometer.  
+    This is an interactive command available only in the Tcl environment.
+
+    report_pathfault_statistics:
+      
+    report_pathfault_statistics is used to print out the path coverage 
+    statistics resulting from path delay test generation. 
+
+    report_pathfaults:
+      
+    report_pathfaults is used to print out individual path fault status 
+    resulting from path delay test generation. 
+
+    report_physical_coordinates_for_instance:
+      
+    report_physical_coordinates_for_instance command is used to report all X-Y coordinates of
+    an instance box in OpenAccess physical database. This is an interactive command available
+    only in the Tcl environment.
+
+    report_physical_correlation:
+      
+    report_physical_correlation is used to generate a report which indicates
+    the degree of correlation between the nets and blocks (instances of technology
+    cells), in the Modus logic model and a corresponding physical design
+    in an OpenAccess database. 
+
+    report_physical_diagnostics_setup:
+      
+    report_physical_diagnostics_setup command is used to report all the options that are used
+    to access OpenAccess physical database. This is an interactive command available only in the
+    Tcl environment.
+
+    report_physical_instance_from_coordinates:
+      
+    report_physical_instance_from_coordinates command is used to report all the instances that are on
+    the given X-Y coordinate in OpenAccess physical database. The command might return multiple instances
+    in case more than one instance is present at the same location. This is an interactive command 
+    available only in the Tcl environment.
+
+    report_physical_objects_from_coordinates:
+      
+    report_physical_objects_from_coordinates command is used to report all the objects such as
+    shapes or pins present at a given X-Y coordinate in OpenAccess physical database. This is
+    an interactive command available only in the Tcl environment.
+
+    report_physical_trends:
+      
+    report_physical_trends is used to report the physical diagnostics trends for 
+    the specified nets of interest.
+
+    report_pins:
+      
+    report_pins command is used to report the information about the specified pins.
+    This is an interactive command available only in the Tcl environment and operates
+    on the context set using set_context command.
+
+    report_processing_status:
+      
+    report_processing_status is used to print out the status of the process 
+    audits.
+
+    report_running_commands:
+      
+    report_running_commands command is used to report currenty running processes running in the Modus 
+    Tcl console. This is an interactive command available only in the Tcl environment.
+
+    report_scan_flop_fault_effects:
+      
+    report_scan_flop_fault_effects is used to perform simulation on the specified 
+    list of scan flop faults and reports the fault effects. 
+
+    report_scanchain_holes:
+      
+    report_scanchains:
+      
+    report_scanchains is used to perform the tracing and reporting of scan path 
+    for the specified scan chain(s).
+
+    report_scandiag_dictionary:
+      
+    report_scandiag_dictionary is used to report the information stored in the scan 
+    chain diagnostics dictionary files generated by analyze_chain_diagnosability.
+
+    report_sdc:
+      
+     report_sdc is used to report the design constraints that were processed by the read_sdc command 
+     from an SDC (Synopsys(R) Design Constraint) file.
+
+    report_sdql:
+      
+    report_sdql is used to calculate the SDQL effectiveness of a set of test patterns.
+
+    report_sdtsnt_objective_statistics:
+      
+    report_sdtsnt_objective_statistics is used to print out the coverage 
+    statistics resulting from stuck driver and shorted nets tests. 
+
+    report_sdtsnt_objectives:
+      
+    report_sdtsnt_objectives is used to print out the objectives used for 
+    stuck driver and/or shorted nets tests. 
+
+    report_sequences:
+      
+    report_sequences is used to print out the binary sequence 
+    definition file in ascii format. 
+
+    report_simulation_values:
+      
+    report_simulation_values command is used to report values on a list of pins/nodes while simulating 
+    a sequence or an event. This is an interactive command available only in the Tcl environment.
+
+    report_test_structures:
+      
+    report_test_structures is used to print out information about the test 
+    structures in the logic model as configured for the specified test mode; 
+    such as, information about the scan chains. 
+
+    report_testfunctions:
+      
+    report_testfunctions command is used to report the information about the pins 
+    associated with the specified test function names. This is an interactive command 
+    available only in the Tcl environment and operates on the context set using 
+    set_context command.
+
+    report_tester_description_rule:
+      
+    report_tester_description_rule is used to print the TDR (Tester Description
+    Rule) data. 
+
+    report_tsv_messages:
+      
+    report_tsv_messages command is used to report all the TSV messages 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_vector_simulation_options:
+      
+    report_vector_simulation_options is used to print the simulation options 
+    that were in effect when the vectors were created. 
+
+    report_vector_statistics:
+      
+    report_vector_statistics is used to print out a summary that includes the 
+    count of each hierarchical level of the vectors. 
+
+    report_vector_summary:
+      
+     report_vector_summary is used to print a summary of each type of vector 
+     created and their effectiveness in detecting faults. 
+
+    report_vector_volume:
+      
+    report_vector_volume is used to calculate the test data volume based on 
+    test pattern statistics.  It also estimates whether the data will fit in 
+    the tester buffer. 
+
+    report_vectors:
+      
+    report_vectors is used to print out the binary vectors in 
+    ascii format. 
+
+    report_vectors_for_core_migration_tests:
+      
+    report_vectors_for_core_migration_tests is used to print out the binary vectors, 
+    that are intended for test data migration, in ascii format. 
+
+    report_vectors_for_macro_tests:
+      
+    report_vectors_for_macro_tests is used to print out the binary vectors, 
+    that are intended for test data migration, in ascii format. 
+
+    report_verify_test_structures_messages:
+      
+    report_verify_test_structures_messages is used to print out the messages 
+    resulting from a previous invocation of verify_test_structures.
+
+    report_volume_database_info:
+      
+       ================report_volume_database_info=================
+      USAGE:- report_volume_database_info WORKDIR=<WORKDIR>        
+      This command reports Volume Diagnostics Database Details     
+      It reports the following details:-                           
+      a. Whether the specified WORKDIR is connected to Volume Diagnostics Database Directory 
+      b. If it is connected to Volume Database Directory:-
+            Reports Database connection Details
+            If server for the specified database is up and running
+              If so, it reports all the databases
+      ============================================================
+
+Attributes:
+  flow_report_directory(root):# Flow directory where reports are written.
+  report_context(root):       # The attribute should be set to 'true' if current context is to be reported in reporting commands.
+  report_header_messages(root):# Report Header Messages in ouput of command
+  report_memory_details(root):# Report Memory Details in ouput of command
+  report_message_summary(root):# Report Message Summary in ouput of command
+  reportchannelio(root):      # Report Channel Heads and Tails
+  reportchannelmaskchain(root):# Report Channel Mask Chains
+  reportchannelmaskstate(root):# report channel mask state values
+  reportconstraints(root):    # report constraints
+  reportopcgregisters(root):  # report opcg registers 
+  reportscanchain(root):      # Report Scan Chain Flops/Latches
+  disable_report(define_testmode_obj):# Disable reporting
+  report_options(define_testmode_obj):# Reporting options
+  Type 'help <obj_type> <attribute_name>' to get full description of object attribute
+@modus:root:/ 10> help *report_vector_summary*
+Commands:
+    report_vector_summary:
+
+     report_vector_summary is used to print a summary of each type of vector 
+     created and their effectiveness in detecting faults. 
+
+
+report_vector_summary:
+
+ [-H]                                  Help Text
+ [-h]                                  Help Text
+ [-EXPERIMENT <string>]                Input experiment name
+ [-LOG no|all|summary|nosummary] (all) Customize Data Written to Log
+ [-LOGCOMPRESS yes|no] (no)            Compress the log file
+ [-LOGFILE <outfilename>]              Write to specified log file
+ [-STDOUT no|all|summary|nosummary] (all) Customize Data Written to STDOUT
+  -TESTMODE <string>                   Test Mode Name
+  -WORKDIR <string>                    Working Directory
+ [-help <string>]                      Help Facility
+ [-key yes|no] (no)                    print a key for the vector templates in the summary
+ [-messagecount <string>]              Limit Messages for Specified Message Id (e.g., messagecount=XXX-710=3).
+ [-messagecounteach <integer>]         Default Limit for Each Message.
+ [-messagecounteachseverity all|excludeinfo] (all) Level of severity for which messages are to be suppressed as per messagecounteach
+ [-summary yes|no] (yes)               print a summary of the vectors
+ [-vectors yes|no] (no)                print more information about each vector template
+
+@modus:root:/ 11> report_vector_summary -testmode FULLSCAN -summary yes > reports/vector_summary.txt
+0
+@modus:root:/ 12> report_chains -testmode FULLSCAN
+ERROR (TCM-48): "-testmode" is not a legal option for command "report_chains". Either the current option or an option prior to it is not specified correctly.
+
+@modus:root:/ 13> help *report_chains*
+Commands:
+    report_chains:
+      
+    report_chains command is used to report the information about the scan chains 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+@modus:root:/ 14> report_chains -summary true > reports/scanchains.txt
+ERROR (TCM-48): ">" is not a legal option for command "report_chains". Either the current option or an option prior to it is not specified correctly.
+
+@modus:root:/ 15> report_chains -summary true 
+ERROR (TCM-67): Option -summary and <objects> are mutually exclusive. Check if more than one options that are mutually exclusive were given or if an invalid option was given.
+
+@modus:root:/ 16> report_vector_summary -testmode FULLSCAN -summary true > reports/vector_summary.txt
+5
+@modus:root:/ 17> report_vector_summary -testmode FULLSCAN -summary yes > reports/vector_summary.txt
+0
+@modus:root:/ 18> report_chains 
+
+INFO (TUI-361): Initializing Model. This may take some time to load. [end TUI_361]
+
+INFO (TUI-766): Initialized Model. CPU time:  0:00:00 Elapsed time:  0:00:00.00 [end TUI_766]
+
+
+ERROR (TUI-730): Testmode has not been set. Run 'set_context' with a valid testmode and rerun this command. [end TUI_730]
+
+@modus:root:/ 19> help *report_chains*
+Commands:
+    report_chains:
+      
+    report_chains command is used to report the information about the scan chains 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+@modus:root:/ 20> help *report*
+Commands:
+    report_callout:
+      
+    report_callout generates a callout report.
+
+    report_chains:
+      
+    report_chains command is used to report the information about the scan chains 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_clock_gates:
+      
+    report_clock_gates command is used to report the clock gate information for lowpower parts 
+
+    report_cluster_info:
+      
+    report_cluster_info is used to report cluster, region and hard to control/observe
+    nets associated with an experiment created by analyze_lbist_testpoints. 
+
+    report_context:
+      
+    report_context command is used to report the current context in tcl environment. 
+    This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_diag_scanchain_xorsegments:
+      
+    report_diag_scanchain_xorsegments is used to report all the XOR segments identified
+    through generation of the special XOR patterns by create_diag_tests_scanchain_xorsegments.
+
+    report_domain_fault_statistics:
+      
+     report_domain_fault_statistics is used to print out the fault coverage 
+     statistics for a clock domain.
+
+    report_domain_faults:
+      
+     report_domain_faults is used to print out a list of faults for a clock 
+     domain that meet the specified criteria.
+
+    report_fault_effects:
+      
+    report_fault_effects is used to perform simulation on the specified 
+    list of faults and reports the fault effects. 
+
+    report_fault_statistics:
+      
+    report_fault_statistics is used to print out the fault coverage 
+    statistics.
+
+    report_faults:
+      
+    report_faults is used to print out a list of faults that meet the specified 
+    criteria. 
+
+    report_flow:
+      
+    report_flow command is used to report the flow statistics. 
+    This is an interactive command available only in the Tcl environment.
+
+    report_good_machine_states:
+      
+    report_good_machine_states is used to perform good machine simulation on the specified 
+    list of sequences and report simulated values on the user specified set of nodes. 
+
+    report_groups_for_macro_tests:
+      
+    report_groups_for_macro_tests is used to print out the grouping information
+    for macro tests.  The grouping is determined by verify_macro_isolation 
+
+    report_instances:
+      
+    report_instances command is used to report the information about the specified 
+    instances. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_memory_fault_statistics:
+      
+    report_memory_fault_statistics reports the fault statistics for individual memories.  
+    The memories must adhere to the Modus memory modeling requirements. 
+
+    report_messages:
+      
+  report_messages command is used to report all types of messages (info,warning,severe_warning,error) for the command. This is an interactive command available only in the Tcl environment.
+
+    report_metric:
+      
+    report_metric command is used to create a webpage for the populated Metrics.
+    This is an interactive command available only in the Tcl environment.
+
+    report_miscompare_database:
+      
+    report_miscompare_database command is used to report the contents of miscompare database. 
+     This is an interactive command available only in the Tcl environment.
+
+    report_model_statistics:
+      
+    report_model_statistics is used to print out information about the 
+    Cadence Test logic model. 
+
+    report_odometer:
+      
+    report_odometer is used to report details of an odometer.  
+    This is an interactive command available only in the Tcl environment.
+
+    report_pathfault_statistics:
+      
+    report_pathfault_statistics is used to print out the path coverage 
+    statistics resulting from path delay test generation. 
+
+    report_pathfaults:
+      
+    report_pathfaults is used to print out individual path fault status 
+    resulting from path delay test generation. 
+
+    report_physical_coordinates_for_instance:
+      
+    report_physical_coordinates_for_instance command is used to report all X-Y coordinates of
+    an instance box in OpenAccess physical database. This is an interactive command available
+    only in the Tcl environment.
+
+    report_physical_correlation:
+      
+    report_physical_correlation is used to generate a report which indicates
+    the degree of correlation between the nets and blocks (instances of technology
+    cells), in the Modus logic model and a corresponding physical design
+    in an OpenAccess database. 
+
+    report_physical_diagnostics_setup:
+      
+    report_physical_diagnostics_setup command is used to report all the options that are used
+    to access OpenAccess physical database. This is an interactive command available only in the
+    Tcl environment.
+
+    report_physical_instance_from_coordinates:
+      
+    report_physical_instance_from_coordinates command is used to report all the instances that are on
+    the given X-Y coordinate in OpenAccess physical database. The command might return multiple instances
+    in case more than one instance is present at the same location. This is an interactive command 
+    available only in the Tcl environment.
+
+    report_physical_objects_from_coordinates:
+      
+    report_physical_objects_from_coordinates command is used to report all the objects such as
+    shapes or pins present at a given X-Y coordinate in OpenAccess physical database. This is
+    an interactive command available only in the Tcl environment.
+
+    report_physical_trends:
+      
+    report_physical_trends is used to report the physical diagnostics trends for 
+    the specified nets of interest.
+
+    report_pins:
+      
+    report_pins command is used to report the information about the specified pins.
+    This is an interactive command available only in the Tcl environment and operates
+    on the context set using set_context command.
+
+    report_processing_status:
+      
+    report_processing_status is used to print out the status of the process 
+    audits.
+
+    report_running_commands:
+      
+    report_running_commands command is used to report currenty running processes running in the Modus 
+    Tcl console. This is an interactive command available only in the Tcl environment.
+
+    report_scan_flop_fault_effects:
+      
+    report_scan_flop_fault_effects is used to perform simulation on the specified 
+    list of scan flop faults and reports the fault effects. 
+
+    report_scanchain_holes:
+      
+    report_scanchains:
+      
+    report_scanchains is used to perform the tracing and reporting of scan path 
+    for the specified scan chain(s).
+
+    report_scandiag_dictionary:
+      
+    report_scandiag_dictionary is used to report the information stored in the scan 
+    chain diagnostics dictionary files generated by analyze_chain_diagnosability.
+
+    report_sdc:
+      
+     report_sdc is used to report the design constraints that were processed by the read_sdc command 
+     from an SDC (Synopsys(R) Design Constraint) file.
+
+    report_sdql:
+      
+    report_sdql is used to calculate the SDQL effectiveness of a set of test patterns.
+
+    report_sdtsnt_objective_statistics:
+      
+    report_sdtsnt_objective_statistics is used to print out the coverage 
+    statistics resulting from stuck driver and shorted nets tests. 
+
+    report_sdtsnt_objectives:
+      
+    report_sdtsnt_objectives is used to print out the objectives used for 
+    stuck driver and/or shorted nets tests. 
+
+    report_sequences:
+      
+    report_sequences is used to print out the binary sequence 
+    definition file in ascii format. 
+
+    report_simulation_values:
+      
+    report_simulation_values command is used to report values on a list of pins/nodes while simulating 
+    a sequence or an event. This is an interactive command available only in the Tcl environment.
+
+    report_test_structures:
+      
+    report_test_structures is used to print out information about the test 
+    structures in the logic model as configured for the specified test mode; 
+    such as, information about the scan chains. 
+
+    report_testfunctions:
+      
+    report_testfunctions command is used to report the information about the pins 
+    associated with the specified test function names. This is an interactive command 
+    available only in the Tcl environment and operates on the context set using 
+    set_context command.
+
+    report_tester_description_rule:
+      
+    report_tester_description_rule is used to print the TDR (Tester Description
+    Rule) data. 
+
+    report_tsv_messages:
+      
+    report_tsv_messages command is used to report all the TSV messages 
+    in the design. This is an interactive command available only in the Tcl environment 
+    and operates on the context set using set_context command.
+
+    report_vector_simulation_options:
+      
+    report_vector_simulation_options is used to print the simulation options 
+    that were in effect when the vectors were created. 
+
+    report_vector_statistics:
+      
+    report_vector_statistics is used to print out a summary that includes the 
+    count of each hierarchical level of the vectors. 
+
+    report_vector_summary:
+      
+     report_vector_summary is used to print a summary of each type of vector 
+     created and their effectiveness in detecting faults. 
+
+    report_vector_volume:
+      
+    report_vector_volume is used to calculate the test data volume based on 
+    test pattern statistics.  It also estimates whether the data will fit in 
+    the tester buffer. 
+
+    report_vectors:
+      
+    report_vectors is used to print out the binary vectors in 
+    ascii format. 
+
+    report_vectors_for_core_migration_tests:
+      
+    report_vectors_for_core_migration_tests is used to print out the binary vectors, 
+    that are intended for test data migration, in ascii format. 
+
+    report_vectors_for_macro_tests:
+      
+    report_vectors_for_macro_tests is used to print out the binary vectors, 
+    that are intended for test data migration, in ascii format. 
+
+    report_verify_test_structures_messages:
+      
+    report_verify_test_structures_messages is used to print out the messages 
+    resulting from a previous invocation of verify_test_structures.
+
+    report_volume_database_info:
+      
+       ================report_volume_database_info=================
+      USAGE:- report_volume_database_info WORKDIR=<WORKDIR>        
+      This command reports Volume Diagnostics Database Details     
+      It reports the following details:-                           
+      a. Whether the specified WORKDIR is connected to Volume Diagnostics Database Directory 
+      b. If it is connected to Volume Database Directory:-
+            Reports Database connection Details
+            If server for the specified database is up and running
+              If so, it reports all the databases
+      ============================================================
+
+Attributes:
+  flow_report_directory(root):# Flow directory where reports are written.
+  report_context(root):       # The attribute should be set to 'true' if current context is to be reported in reporting commands.
+  report_header_messages(root):# Report Header Messages in ouput of command
+  report_memory_details(root):# Report Memory Details in ouput of command
+  report_message_summary(root):# Report Message Summary in ouput of command
+  reportchannelio(root):      # Report Channel Heads and Tails
+  reportchannelmaskchain(root):# Report Channel Mask Chains
+  reportchannelmaskstate(root):# report channel mask state values
+  reportconstraints(root):    # report constraints
+  reportopcgregisters(root):  # report opcg registers 
+  reportscanchain(root):      # Report Scan Chain Flops/Latches
+  disable_report(define_testmode_obj):# Disable reporting
+  report_options(define_testmode_obj):# Reporting options
+  Type 'help <obj_type> <attribute_name>' to get full description of object attribute
+@modus:root:/ 21> help *report_fault_effects*
+Commands:
+    report_fault_effects:
+
+    report_fault_effects is used to perform simulation on the specified 
+    list of faults and reports the fault effects. 
+
+
+report_fault_effects:
+
+ [-H]                                  Advanced help text
+ [-h]                                  Help text
+ [-v]                                  Verbose Output
+ [-w]                                  Wait for Files to free if in use
+ [-ALTFAULT <string>]                  Alternate Fault Model Name
+ [-EXPERIMENT <string>]                Input experiment name
+ [-LOG no|all|summary|nosummary] (all) Customize Data Written to Log
+ [-LOGCOMPRESS yes|no] (no)            Compress the log file
+ [-LOGFILE <outfilename>]              Write to specified log file
+ [-STDOUT no|all|summary|nosummary] (all) Customize Data Written to STDOUT
+ [-TB_USE_NETNAMES yes|no] (yes)       Use net names instead of pin names in Modus messages
+  -TESTMODE <string>                   Test Mode Name
+  -WORKDIR <string>                    Working Directory
+ [-aliascheck no|yes] (no)             Check for fault aliasing on designs with XOR compression
+ [-checkpoint <integer 0 or greater>] (Conditional Default) Checkpoint Interval in minutes (approximate)
+ [-choppers safe|risky] (Conditional Default) Clock Chopper Simulation
+ [-comparemeasures no|yes] (no)        Compare PO Measures
+ [-constraintcheck no|yes] (no)        Detect Run-Time Constraint Violations.
+ [-contentionreport soft|hard|all|none] (none) Type of Three-state Contention to Report
+ [-coreinstance <string>]              specify active migrated core instance name or Id for Hierarchal Test run.
+ [-countxcaptureswitches half|no|yes] (half) Count X transitions as switching activity
+ [-delaymode zero|unit] (Conditional Default) Delay Mode for Simulation
+  -faultinjectionfile <infilename>     Specify the file name containing the list of faults for fault simulation.
+ [-faultsperpass <string>] (0)         Number of Faults per Pass
+ [-fmosc <integer>]                    Fault Machine Oscillation Detection Threshold
+ [-gmosc <integer 0 to 64000>] (Conditional Default) Good Machine Oscillation Detection Threshold
+ [-help <string>]                      Help Facility
+ [-keepers safe|risky|no] (Conditional Default) Keeper Device Simulation
+ [-latchsimulation optimistic|pessimistic] (Conditional Default) Sim Latch/Flip-flop Output to X when Clock at X
+ [-lotwaferheader yes|no] (Conditional Default) Adds the header containing lot, wafer details for the set of failures in a device.
+ [-machinesize <integer>] (25000)      Maximum Fault Machine Size
+ [-maxcputime <decimal 0.01 or greater>] Maximum CPU Minutes (approximate)
+ [-maxelapsedtime <decimal 0.01 or greater>] Maximum Elapsed Minutes (approximate)
+ [-messagecount <string>]              Limit Messages for Specified Message Id (e.g., messagecount=XXX-710=3).
+ [-messagecounteach <integer>]         Default Limit for Each Message.
+ [-messagecounteachseverity all|excludeinfo] (all) Level of severity for which messages are to be suppressed as per messagecounteach
+ [-outputdirectoryname <outdir>]       Output directory name to write out the failure files.
+ [-outputfilename <outfilename>] (Conditional Default) Output file name to write out the fault effects.
+ [-outputscriptname <outfilename>|no] (run_logic_diagnostics.tcl) Specify the name of the Tcl script file containing the logic diagnostics flow for the faults injected by this command.
+ [-propxignore no|yes] (Conditional Default) Propagate X to Downstream Logic from Ignored Location
+ [-quiet no|yes] (no)                  Print Fewer Messages
+ [-ramsize all|<integer>:] (Conditional Default) RAM Address Space Size
+ [-ramtest no|yes] (Conditional Default) ramtest,arraytest
+ [-restart yes|no]                     Restart from Checkpoint
+ [-testrange all|<odometerRange>[,all|<odometerRange>]...] Select Range of Tests
+ [-useatpgsimoptions no|yes] (no)      Use Simulation Options from Modus
+ [-writemisrfails 1pass|2pass|1passserial] (1pass) This is valid only for OPMISR test modes. Enables the writing of failures in special OPMISR mode.
+ [-xwidth <integer>]                   Delay Uncertainty for PI changes
+
+@modus:root:/ 22> report_fault_effects -testmode FULLSCAN -outputfilename reports/effects.txt
+Starting Command: report_fault_effects 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_fault_effects_FULLSCAN_031826140141-308654000 [end TDA_015]
+
+ERROR (TFW-901): Required option -faultinjectionfile must be specified.  [end TFW_901] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-901): Required option -faultinjectionfile must be specified.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 23> exit

@@ -1,0 +1,11 @@
+Starting Command: report_vector_summary 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_vector_summary_FULLSCAN_031826135951-749786000 [end TDA_015]
+
+      #Sequences  %Det     #Static   #Dynamic  1st Seq Template
+      ----------  ----     -------   --------  ------- --------
+#1           151  99.8        9375          0        3 sSP(rclk)P(wclk)Mm
+#2             1   0.2          15          0        2 sSP(rst)m
+#3             2   0.0           0          0        0 init
+#4             1   0.0           0          0        1 scan
+

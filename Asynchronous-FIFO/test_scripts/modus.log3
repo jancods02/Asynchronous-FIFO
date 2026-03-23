@@ -1,0 +1,108 @@
+
+ 
+Copyright (C) 2002-2020 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks and Modus is a trademark 
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Type 'help legal_notices' for third party license notices. 
+Version : 20.12-s002_1, built Feb 26 2021 (linux26_64)
+Options : 
+Date    : Mon, March 16 13:50:49 2026
+Host    : lenovo-56.pilani.bits-pilani.ac.in (x86_64 Linux 4.18.0-425.19.2.el8_7.x86_64) (12*INTEL(R) XEON(R) SILVER 4510 30720KB)
+OS      : Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+INFO (TUI-300): Detected the presence of Modus database in present working directory. The 'workdir' root attribute is set to '/projects/2025H1230098P/cadence/FIFO/test_scripts'. [end TUI_300]
+@modus:root:/ 1> # Write all faults to a text file
+@modus:root:/ 2> report_faults -all -output reports/full_fault_report.txt
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031626135101-369138000 [end TDA_015]
+
+ERROR (TFW-021): The option -all is not valid for the report_faults command line.  [end TFW_021] 
+ERROR (TFW-021): The option -reports/full_fault_report.txt is not valid for the report_faults command line.  [end TFW_021] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      2 ERROR (TFW-021): The option -all is not valid for the report_faults command line.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 3> # Or check only the "bad" ones (Untestable or Blocked)
+@modus:root:/ 4> report_faults -all -output reports/full_fault_report.txt
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031626135113-373640000 [end TDA_015]
+
+ERROR (TFW-021): The option -all is not valid for the report_faults command line.  [end TFW_021] 
+ERROR (TFW-021): The option -reports/full_fault_report.txt is not valid for the report_faults command line.  [end TFW_021] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      2 ERROR (TFW-021): The option -all is not valid for the report_faults command line.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 5> report_faults -type all -file reports/full_fault_report.txt
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_031626135157-264603000 [end TDA_015]
+
+ERROR (TFW-021): The option -file is not valid for the report_faults command line.  [end TFW_021] 
+
+ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.  [end TFW_926] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  ERROR Messages...
+      1 ERROR (TFW-021): The option -file is not valid for the report_faults command line.   
+      1 ERROR (TFW-926): Syntax checking detected terminating errors.  Correct the errors noted in preceding messages and rerun.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+5
+@modus:root:/ 6> report_statistics
+invalid command name "report_statistics"
+@modus:root:/ 7> report_faults -type all > reports/full_fault_report.txt
+/bin/sh: reports/full_fault_report.txt: No such file or directory
+1
+@modus:root:/ 8> report_faults -type all > reports/full_fault_report.txt
+0
+@modus:root:/ 9> report_statistics
+invalid command name "report_statistics"
+@modus:root:/ 10> build_fault_statistics
+invalid command name "build_fault_statistics"
+@modus:root:/ 11> write_statistics -file reports/atpg_stats.txt
+invalid command name "write_statistics"
+@modus:root:/ 12> report_summary > reports/atpg_summary.txt
+invalid command name "report_summary"

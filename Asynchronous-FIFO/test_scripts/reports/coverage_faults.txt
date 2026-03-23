@@ -1,0 +1,50 @@
+Starting Command: report_faults 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/FIFO/test_scripts/testresults/logs/log_report_faults_FULLSCAN_asynchronous_fifo_atpg_031826104404-887827000 [end TDA_015]
+
+
+TFMlist 
+
+Logic Model(GM)   03/18/26
+                  04:59:35
+WARNING (TFM-071): Experiment asynchronous_fifo_atpg is not registered.  [end TFM_071] 
+WARNING (TFM-072): Unable to open Experiment file /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/faultStatus.FULLSCAN.asynchronous_fifo_atpg.  [end TFM_072] 
+
+
+INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+ Total                 :            0
+ Tested                :            0
+ Possibly Tested       :            0
+ Redundant             :            0
+ Untested (unprocessed):            0
+[end TFM_901]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,020,672  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Wednesday Mar 18 10:44:06 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-901): Fault Status Statistics for faults included in this fault list: 
+
+  WARNING Messages...
+      1 WARNING (TFM-071): Experiment asynchronous_fifo_atpg is not registered.   
+      1 WARNING (TFM-072): Unable to open Experiment file /projects/2025H1230098P/cadence/FIFO/test_scripts/tbdata/faultStatus.FULLSCAN.asynchronous_fifo_atpg.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
